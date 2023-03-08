@@ -1,0 +1,10 @@
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+        <title>onetreey 的六便士</title>
+        <link>https://onetreey.github.io/</link>
+        <description>the tree is growing...</description>
+        <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>251196507@qq.com (yangshu)</managingEditor>
+            <webMaster>251196507@qq.com (yangshu)</webMaster><lastBuildDate>Sat, 11 Feb 2023 16:11:37 &#43;0800</lastBuildDate>
+            <atom:link href="https://onetreey.github.io/index.xml" rel="self" type="application/rss+xml" />
+        </channel>
+</rss>

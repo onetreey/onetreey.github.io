@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Posts on onetreey 的六便士</title>
+    <link>https://onetreey.github.io/post/</link>
+    <description>Recent content in Posts on onetreey 的六便士</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-CN</language>
+    <managingEditor>251196507@qq.com (yangshu)</managingEditor>
+    <webMaster>251196507@qq.com (yangshu)</webMaster>
+    <lastBuildDate>Sat, 11 Feb 2023 16:11:37 +0800</lastBuildDate><atom:link href="https://onetreey.github.io/post/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>我的第一篇博客</title>
+      <link>https://onetreey.github.io/post/first/</link>
+      <pubDate>Sat, 11 Feb 2023 16:11:37 +0800</pubDate>
+      <author>251196507@qq.com (yangshu)</author>
+      <guid>https://onetreey.github.io/post/first/</guid>
+      <description>Hello，我的第一篇静态博客！ 工作中我们会遇见很多有趣的知识，生活中我们会遇见更多有趣的事情。用博客记录它们不失为一种消遣的方式。 与学术论</description>
+    </item>
+    
+    <item>
+      <title>博客记录的开始</title>
+      <link>https://onetreey.github.io/post/first_post/</link>
+      <pubDate>Sat, 11 Feb 2023 16:10:37 +0800</pubDate>
+      <author>251196507@qq.com (yangshu)</author>
+      <guid>https://onetreey.github.io/post/first_post/</guid>
+      <description>博客记录的开始 Hello，我的第一篇静态博客！ 工作中我们会遇见很多有趣的知识，生活中我们会遇见更多有趣的事情。用博客记录它们不失为一种消遣的</description>
+    </item>
+    
+    <item>
+      <title>Story_1</title>
+      <link>https://onetreey.github.io/post/story_1/</link>
+      <pubDate>Sat, 11 Feb 2023 16:09:37 +0800</pubDate>
+      <author>251196507@qq.com (yangshu)</author>
+      <guid>https://onetreey.github.io/post/story_1/</guid>
+      <description>你好，美好的故事值得书写。 0213故事灵感很久很久以前，这里有一个神奇的村庄，名字叫七星村。这个村庄的天气由他们自己决定。每天晚上，大家一起</description>
+    </item>
+    
+    <item>
+      <title>Opticalnote</title>
+      <link>https://onetreey.github.io/post/opticalnote/</link>
+      <pubDate>Thu, 09 Feb 2023 19:27:23 +0800</pubDate>
+      <author>251196507@qq.com (yangshu)</author>
+      <guid>https://onetreey.github.io/post/opticalnote/</guid>
+      <description>光路笔记本文是近期进行光路学习的一点总结。 搭建原子干涉仪中的光路系统是一项繁复的工作，其繁复性主要体现在光频率的多样与时序控制的精准。但光路</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,15 @@
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+        <title>LaTeX - 标签 - onetreey 的六便士</title>
+        <link>https://onetreey.github.io/tags/latex/</link>
+        <description>LaTeX - 标签 - onetreey 的六便士</description>
+        <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>251196507@qq.com (yangshu)</managingEditor>
+            <webMaster>251196507@qq.com (yangshu)</webMaster><lastBuildDate>Tue, 27 Oct 2020 00:00:00 &#43;0000</lastBuildDate><atom:link href="https://onetreey.github.io/tags/latex/" rel="self" type="application/rss+xml" /><item>
+    <title>LaTeX 学习记录（2）：编写文档</title>
+    <link>https://onetreey.github.io/post/first/</link>
+    <pubDate>Tue, 27 Oct 2020 00:00:00 &#43;0000</pubDate><author>
+        <name>yangshu</name>
+    </author><guid>https://onetreey.github.io/post/first/</guid>
+    <description><![CDATA[这回我们来看看如何用 $\LaTeX$ 编写文档。]]></description>
+</item></channel>
+</rss>
