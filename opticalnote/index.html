@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="robots" content="noodp" />
+    <title>Opticalnote - onetreey 的六便士</title><meta name="Description" content="the tree is growing..."><meta property="og:title" content="Opticalnote" />
+<meta property="og:description" content="光路笔记本文是近期进行光路学习的一点总结。 搭建原子干涉仪中的光路系统是一项繁复的工作，其繁复性主要体现在光频率的多样与时序控制的精准。但光路" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://onetreey.github.io/opticalnote/" /><meta property="og:image" content="https://onetreey.github.io/images/avatar.png"/><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2023-02-09T19:27:23+08:00" />
+<meta property="article:modified_time" content="2023-02-09T19:27:23+08:00" /><meta property="og:site_name" content="onetreey的六便士" />
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:image" content="https://onetreey.github.io/images/avatar.png"/>
+
+<meta name="twitter:title" content="Opticalnote"/>
+<meta name="twitter:description" content="光路笔记本文是近期进行光路学习的一点总结。 搭建原子干涉仪中的光路系统是一项繁复的工作，其繁复性主要体现在光频率的多样与时序控制的精准。但光路"/>
+<meta name="application-name" content="onetreey的六便士">
+<meta name="apple-mobile-web-app-title" content="onetreey的六便士">
+
+<meta name="theme-color" content="#f8f8f8"><meta name="msapplication-TileColor" content="#da532c"><link rel="icon" href="/images/avatar.png"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5"><link rel="manifest" href="/site.webmanifest"><link rel="canonical" href="https://onetreey.github.io/opticalnote/" /><link rel="next" href="https://onetreey.github.io/story_1/" /><link rel="stylesheet" href="/lib/normalize/normalize.min.css"><link rel="stylesheet" href="/css/color.css"><link rel="stylesheet" href="/css/style.min.css"><link rel="preload" as="style" onload="this.onload=null;this.rel='stylesheet'" href="/lib/fontawesome-free/all.min.css">
+        <noscript><link rel="stylesheet" href="/lib/fontawesome-free/all.min.css"></noscript><link rel="preload" as="style" onload="this.onload=null;this.rel='stylesheet'" href="/lib/animate/animate.min.css">
+        <noscript><link rel="stylesheet" href="/lib/animate/animate.min.css"></noscript>
+    
+    
+    
+    <script type="application/ld+json">
+    {
+        "@context": "http://schema.org",
+        "@type": "BlogPosting",
+        "headline": "Opticalnote",
+        "inLanguage": "zh-CN",
+        "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": "https:\/\/onetreey.github.io\/opticalnote\/"
+        },"genre": "posts","wordcount":  1737 ,
+        "url": "https:\/\/onetreey.github.io\/opticalnote\/","datePublished": "2023-02-09T19:27:23+08:00","dateModified": "2023-02-09T19:27:23+08:00","publisher": {
+            "@type": "Organization",
+            "name": "","logo": {
+                    "@type": "ImageObject",
+                    "url": "https:\/\/onetreey.github.io\/images\/avatar.png",
+                    "width":  1280 ,
+                    "height":  720 
+                }},"author": {
+                "@type": "Person",
+                "name": "yangshu"
+            },"description": ""
+    }
+    </script><script src="//instant.page/5.1.1" defer type="module" integrity="sha384-MWfCL6g1OTGsbSwfuMHc8+8J2u71/LA8dzlIN3ycajckxuZZmF+DNjdm7O6H3PSq"></script>
+</head>
+
+<body header-desktop="fixed" header-mobile="auto"><script type="text/javascript">
+        function setTheme(theme) {document.body.setAttribute('theme', theme); document.documentElement.style.setProperty('color-scheme', theme === 'light' ? 'light' : 'dark');}
+        function saveTheme(theme) {window.localStorage && localStorage.setItem('theme', theme);}
+        function getMeta(metaName) {const metas = document.getElementsByTagName('meta'); for (let i = 0; i < metas.length; i++) if (metas[i].getAttribute('name') === metaName) return metas[i]; return '';}
+        if (window.localStorage && localStorage.getItem('theme')) {let theme = localStorage.getItem('theme');theme === 'light' || theme === 'dark' || theme === 'black' ? setTheme(theme) : (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches ? setTheme('dark') : setTheme('light')); } else { if ('auto' === 'light' || 'auto' === 'dark' || 'auto' === 'black') setTheme('auto'), saveTheme('auto'); else saveTheme('auto'), window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches ? setTheme('dark') : setTheme('light');}
+        let metaColors = {'light': '#f8f8f8','dark': '#252627','black': '#000000'}
+        getMeta('theme-color').content = metaColors[document.body.getAttribute('theme')];
+    </script>
+    <div id="back-to-top"></div>
+    <div id="mask"></div><div class="wrapper"><header class="desktop" id="header-desktop">
+    <div class="header-wrapper">
+        <div class="header-title">
+            <a href="/" title="onetreey 的六便士"><img
+        class="logo"
+        loading="lazy"
+        src="/images/avatar.png"
+        srcset="/images/avatar.png, /images/avatar.png 1.5x, /images/avatar.png 2x"
+        sizes="auto"
+        alt="/images/avatar.png"
+        title="/images/avatar.png"><span id="desktop-header-typeit" class="typeit"></span></a>
+        </div>
+        <div class="menu">
+            <div class="menu-inner"><a class="menu-item" href="/posts/"> 文章 </a><a class="menu-item" href="/categories/"> 分类 </a><a class="menu-item" href="/tags/"> 标签 </a><a class="menu-item" href="/about/"> 关于 </a><span class="menu-item delimiter"></span><span class="menu-item search" id="search-desktop">
+                        <input type="text" placeholder="搜索文章标题或内容..." id="search-input-desktop">
+                        <a href="#" class="search-button search-toggle" id="search-toggle-desktop" title="搜索">
+                            <i class="fas fa-search fa-fw"></i>
+                        </a>
+                        <a href="#" class="search-button search-clear" id="search-clear-desktop" title="清空">
+                            <i class="fas fa-times-circle fa-fw"></i>
+                        </a>
+                        <span class="search-button search-loading" id="search-loading-desktop">
+                            <i class="fas fa-spinner fa-fw fa-spin"></i>
+                        </span>
+                    </span><a href="#" class="menu-item theme-select" title="切换主题">
+                    <i class="fas fa-adjust fa-fw"></i>
+                    <select class="color-theme-select" id="theme-select-desktop" title="切换主题">
+                        <option value="light">浅色</option>
+                        <option value="dark">深色</option>
+                        <option value="black">黑色</option>
+                        <option value="auto">跟随系统</option>
+                    </select>
+                </a></div>
+        </div>
+    </div>
+</header><header class="mobile" id="header-mobile">
+    <div class="header-container">
+        <div class="header-wrapper">
+            <div class="header-title">
+                <a href="/" title="onetreey 的六便士"><img
+        class="logo"
+        loading="lazy"
+        src="/images/avatar.png"
+        srcset="/images/avatar.png, /images/avatar.png 1.5x, /images/avatar.png 2x"
+        sizes="auto"
+        alt="/images/avatar.png"
+        title="/images/avatar.png"><span id="mobile-header-typeit" class="typeit"></span></a>
+            </div>
+            <div class="menu-toggle" id="menu-toggle-mobile">
+                <span></span><span></span><span></span>
+            </div>
+        </div>
+        <div class="menu" id="menu-mobile"><div class="search-wrapper">
+                    <div class="search mobile" id="search-mobile">
+                        <input type="text" placeholder="搜索文章标题或内容..." id="search-input-mobile">
+                        <a href="#" class="search-button search-toggle" id="search-toggle-mobile" title="搜索">
+                            <i class="fas fa-search fa-fw"></i>
+                        </a>
+                        <a href="#" class="search-button search-clear" id="search-clear-mobile" title="清空">
+                            <i class="fas fa-times-circle fa-fw"></i>
+                        </a>
+                        <span class="search-button search-loading" id="search-loading-mobile">
+                            <i class="fas fa-spinner fa-fw fa-spin"></i>
+                        </span>
+                    </div>
+                    <a href="#" class="search-cancel" id="search-cancel-mobile">
+                        取消
+                    </a>
+                </div><a class="menu-item" href="/posts/" title="">文章</a><a class="menu-item" href="/categories/" title="">分类</a><a class="menu-item" href="/tags/" title="">标签</a><a class="menu-item" href="/about/" title="">关于</a><a href="#" class="menu-item theme-select" title="切换主题">
+                <i class="fas fa-adjust fa-fw"></i>
+                <select class="color-theme-select" id="theme-select-mobile" title="切换主题">
+                    <option value="light">浅色</option>
+                    <option value="dark">深色</option>
+                    <option value="black">黑色</option>
+                    <option value="auto">跟随系统</option>
+                </select>
+            </a></div>
+    </div>
+</header>
+<div class="search-dropdown desktop">
+    <div id="search-dropdown-desktop"></div>
+</div>
+<div class="search-dropdown mobile">
+    <div id="search-dropdown-mobile"></div>
+</div>
+<main class="main">
+            <div class="container"><div class="toc" id="toc-auto">
+        <h2 class="toc-title">目录</h2>
+        <div class="toc-content" id="toc-content-auto"><nav id="TableOfContents">
+  <ul>
+    <li><a href="#关于原子最外层电子能级总结"><code>关于原子最外层电子能级总结</code></a></li>
+    <li><a href="#各个过程的光需求---2d-mot"><code>各个过程的光需求---2D MOT</code></a></li>
+    <li><a href="#各个过程的光需求---3d-mot"><code>各个过程的光需求---3D MOT</code></a></li>
+    <li><a href="#各个过程的光需求--偏振梯度冷却-moving-molassesmm-过程"><code>各个过程的光需求--偏振梯度冷却 moving molasses（MM 过程）</code></a></li>
+    <li><a href="#各个过程的光需求---上抛"><code>各个过程的光需求---上抛</code></a></li>
+    <li><a href="#各个过程的光需求---选态"><code>各个过程的光需求---选态</code></a></li>
+    <li><a href="#各个过程的光需求---raman光"><code>各个过程的光需求---Raman光</code></a></li>
+    <li><a href="#各个过程的光需求---探测"><code>各个过程的光需求---探测</code></a></li>
+    <li><a href="#总光路分析"><code>总光路分析</code></a></li>
+  </ul>
+</nav></div>
+    </div><script>document.getElementsByTagName("main")[0].setAttribute("pageStyle", "normal")</script><script>document.getElementsByTagName("main")[0].setAttribute("autoTOC", "true")</script><article class="page single"><h1 class="single-title animate__animated animate__flipInX">Opticalnote</h1><div class="post-meta">
+            <div class="post-meta-line">
+                <span class="post-author"><i class="author fas fa-user-circle fa-fw"></i><a href="/" title="Author" rel=" author" class="author">yangshu</a>
+                </span></div>
+            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw"></i>&nbsp;<time datetime="2023-02-09">2023-02-09</time>&nbsp;<i class="far fa-edit fa-fw"></i>&nbsp;<time datetime="2023-02-09">2023-02-09</time>&nbsp;<i class="fas fa-pencil-alt fa-fw"></i>&nbsp;约 1737 字&nbsp;
+                <i class="far fa-clock fa-fw"></i>&nbsp;预计阅读 4 分钟&nbsp;</div>
+        </div><div class="details toc" id="toc-static"  kept="">
+                <div class="details-summary toc-title">
+                    <span>目录</span>
+                    <span><i class="details-icon fas fa-angle-right"></i></span>
+                </div>
+                <div class="details-content toc-content" id="toc-content-static"><nav id="TableOfContents">
+  <ul>
+    <li><a href="#关于原子最外层电子能级总结"><code>关于原子最外层电子能级总结</code></a></li>
+    <li><a href="#各个过程的光需求---2d-mot"><code>各个过程的光需求---2D MOT</code></a></li>
+    <li><a href="#各个过程的光需求---3d-mot"><code>各个过程的光需求---3D MOT</code></a></li>
+    <li><a href="#各个过程的光需求--偏振梯度冷却-moving-molassesmm-过程"><code>各个过程的光需求--偏振梯度冷却 moving molasses（MM 过程）</code></a></li>
+    <li><a href="#各个过程的光需求---上抛"><code>各个过程的光需求---上抛</code></a></li>
+    <li><a href="#各个过程的光需求---选态"><code>各个过程的光需求---选态</code></a></li>
+    <li><a href="#各个过程的光需求---raman光"><code>各个过程的光需求---Raman光</code></a></li>
+    <li><a href="#各个过程的光需求---探测"><code>各个过程的光需求---探测</code></a></li>
+    <li><a href="#总光路分析"><code>总光路分析</code></a></li>
+  </ul>
+</nav></div>
+            </div><div class="content" id="content"><script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=default"></script>
+<h1 id="光路笔记" class="headerLink">
+    <a href="#%e5%85%89%e8%b7%af%e7%ac%94%e8%ae%b0" class="header-mark"></a><code>光路笔记</code></h1><p>本文是近期进行光路学习的一点总结。</p>
+<p>搭建原子干涉仪中的光路系统是一项繁复的工作，其繁复性主要体现在光频率的多样与时序控制的精准。但光路的设计只涉及到近代物理实验的相关知识，琐碎而并不艰深。这里将光路系统涉及到的一些基本器件与知识进行简单罗列，以供初学者复习。</p>
+<h2 id="关于原子最外层电子能级总结" class="headerLink">
+    <a href="#%e5%85%b3%e4%ba%8e%e5%8e%9f%e5%ad%90%e6%9c%80%e5%a4%96%e5%b1%82%e7%94%b5%e5%ad%90%e8%83%bd%e7%ba%a7%e6%80%bb%e7%bb%93" class="header-mark"></a><code>关于原子最外层电子能级总结</code></h2><hr>
+<ol>
+<li>
+<p>主量子数 $n$</p>
+</li>
+<li>
+<p>轨道角动量 $L:（n-1，\ldots{}，0）$</p>
+</li>
+<li>
+<p>自旋角动量 $S：（1/2,-1/2）$</p>
+</li>
+</ol>
+<p>其中轨道角动量和自旋角动量耦合 $J=L+S$，$J=L+S-1\ldots{}$ 由于是单电子。</p>
+<ol start="4">
+<li>核自旋角动量 $I：F=J+I,\ldots{},\vert{} J-I \vert{}$。</li>
+</ol>
+<p>$Rb^{87}$ 基态的电子：$n=5 ，L=0，S=1/2，J=1/2$；</p>
+<p>最低激发态:$L=1，S=1/2，J=1/2$ 或者 $3/2$，激发态为双重态。如图：</p>
+<p>但是 $Rb^{87}$ 的核自旋是 $I=3/2$，故对于基态：$F=1，2$；激发态 $5^{2}P_{1/2}：F=1，2$；
+激发态 $5^{2}P_{3/2}：F=0，1，2，3$。</p>
+<p>另外有磁场的时候角动量 $z$ 分量为：</p>
+<p>问题： $5^{2}P_{1/2}$ 对考虑的问题有没有影响？</p>
+<p>答案：大约 $7THz$ 。</p>
+<h2 id="各个过程的光需求---2d-mot" class="headerLink">
+    <a href="#%e5%90%84%e4%b8%aa%e8%bf%87%e7%a8%8b%e7%9a%84%e5%85%89%e9%9c%80%e6%b1%82---2d-mot" class="header-mark"></a><code>各个过程的光需求---2D MOT</code></h2><hr>
+<p>需求的光：囚禁光和回泵光</p>
+<p>囚禁光：$F=2\rightarrow{}F&rsquo;=3$ ，光功率 25 $mV$*4</p>
+<p>回泵光：$F=1\rightarrow{}F&rsquo;=2$ ，光功率 3 $mV$</p>
+<p>回泵光作用：反抽运，如图由跃迁规则：$\Delta{}L=\pm{}1，\Delta{}F=0，\pm{}1，\Delta{}m_{F}=\pm{}1$，</p>
+<p>由于囚禁光红失谐，囚禁光会使得原子激发到 $F&rsquo;=2$ 态，由图，可以看出自发跃迁会使原子处于 $F=1$ 态，故要使用回泵光反抽运。</p>
+<h2 id="各个过程的光需求---3d-mot" class="headerLink">
+    <a href="#%e5%90%84%e4%b8%aa%e8%bf%87%e7%a8%8b%e7%9a%84%e5%85%89%e9%9c%80%e6%b1%82---3d-mot" class="header-mark"></a><code>各个过程的光需求---3D MOT</code></h2><hr>
+<p>需求的光：囚禁光和回泵光</p>
+<p>囚禁光：$F=2\rightarrow{}F&rsquo;=3$，光功率 25 $mV$*6</p>
+<p>回泵光： $F=1\rightarrow{}F&rsquo;=2$ ，光功率 5 $mV$</p>
+<h2 id="各个过程的光需求--偏振梯度冷却-moving-molassesmm-过程" class="headerLink">
+    <a href="#%e5%90%84%e4%b8%aa%e8%bf%87%e7%a8%8b%e7%9a%84%e5%85%89%e9%9c%80%e6%b1%82--%e5%81%8f%e6%8c%af%e6%a2%af%e5%ba%a6%e5%86%b7%e5%8d%b4-moving-molassesmm-%e8%bf%87%e7%a8%8b" class="header-mark"></a><code>各个过程的光需求--偏振梯度冷却 moving molasses（MM 过程）</code></h2><hr>
+<p>MOT 冷却极限：146uK，偏振梯度冷却：几uK。</p>
+<p>$I_{sat}$：饱和光强。</p>
+<p>由 周敏康 原子干涉重力测量原理性实验研究</p>
+<p>$MM$ 的设置为 $1.4ms$，失谐 $57MHz$ ，$1.6 I_{sat}$</p>
+<p>具体：囚禁光的基础上将频差减小 $40MHz$，光强逐渐减小到 $8mW$</p>
+<p>问题：为什么偏振梯度冷却在上抛之后进行？</p>
+<p>偏振梯度冷却的原理，看另外报告，原因是上后原子质量比较好</p>
+<h2 id="各个过程的光需求---上抛" class="headerLink">
+    <a href="#%e5%90%84%e4%b8%aa%e8%bf%87%e7%a8%8b%e7%9a%84%e5%85%89%e9%9c%80%e6%b1%82---%e4%b8%8a%e6%8a%9b" class="header-mark"></a><code>各个过程的光需求---上抛</code></h2><hr>
+<p>囚禁光向下的三束与向上的产生频差，获取光子动量也有差别，于是产生获得斜上抛的速度。</p>
+<p>囚禁光：向下的三束频率减小 $5.7MHz$</p>
+<p>问题？失谐不同对跃迁概率影响（吸收光子的数目），失谐不同对 $3D-MOT$ 影响。</p>
+<p>注意原理：这里将原子上抛的过程是使原子的速度所引起的失谐恰好使得两个方向接收到的光子的概率相同，于是原子得以以稳定的速度运动，而不是接收到两束光的光子动量不同造成的，实际上这个引起的动量差别十分的小（学会量级估计）。</p>
+<h2 id="各个过程的光需求---选态" class="headerLink">
+    <a href="#%e5%90%84%e4%b8%aa%e8%bf%87%e7%a8%8b%e7%9a%84%e5%85%89%e9%9c%80%e6%b1%82---%e9%80%89%e6%80%81" class="header-mark"></a><code>各个过程的光需求---选态</code></h2><hr>
+<p>目的：初态制备&mdash;-由演化矩阵得出</p>
+<p>具体需求：将原子制备在 $5^{2}S_{1/2}，F=1，m_{F}=0$。这样一阶塞曼效应为0，二阶塞曼效应，磁不敏感区？具体。。。（博士论文）</p>
+<ol>
+<li>
+<p>回泵光 $50 ms$，原子处于 $5^{2}S_{1/2}，F=2，m_{F}=-2,\ldots{}2$</p>
+</li>
+<li>
+<p>拉曼光 $\pi$ 脉冲，原子处于 $5^{2}S_{1/2}，F=1，m_{F}=0$</p>
+</li>
+<li>
+<p>清除光， $F=2\rightarrow{}F&rsquo;=3，5mW$，将处于 $5^{2}S_{1/2}，F=2$ 的原子吹掉？竖直方向？</p>
+</li>
+</ol>
+<p>吹掉，即给两束原子不同的速度等 $\ldots{}\ldots{}$ 使其不在同一位置即可</p>
+<h2 id="各个过程的光需求---raman光" class="headerLink">
+    <a href="#%e5%90%84%e4%b8%aa%e8%bf%87%e7%a8%8b%e7%9a%84%e5%85%89%e9%9c%80%e6%b1%82---raman%e5%85%89" class="header-mark"></a><code>各个过程的光需求---Raman光</code></h2><hr>
+<p>Raman光：$F=1\rightarrow{}F=2，20  mW$</p>
+<p>$\delta$ 可调，很小，目的是使其共振}</p>
+<h2 id="各个过程的光需求---探测" class="headerLink">
+    <a href="#%e5%90%84%e4%b8%aa%e8%bf%87%e7%a8%8b%e7%9a%84%e5%85%89%e9%9c%80%e6%b1%82---%e6%8e%a2%e6%b5%8b" class="header-mark"></a><code>各个过程的光需求---探测</code></h2><hr>
+<p>目的：测量 $N_{1}/(N_{1}+N_{2})$</p>
+<ol>
+<li>
+<p>探测光：$F=2\rightarrow{}F&rsquo;=3，10mW$，探测 $F=2$ 的原子数目，探测荧光。N$_{2}$</p>
+</li>
+<li>
+<p>清除光：$F=2\rightarrow{}F&rsquo;=3，5mW$，清除 $F=2$ 的原子</p>
+</li>
+<li>
+<p>回泵光： $F=1\rightarrow{}F&rsquo;=2 ，5mW$，将原子泵到 $F=2$ 状态</p>
+</li>
+<li>
+<p>探测光：：$F=2\rightarrow{}F&rsquo;=3，10mW$，探测 $F=2$ 的原子数目，探测荧光。$N_{1}$</p>
+</li>
+</ol>
+<h2 id="总光路分析" class="headerLink">
+    <a href="#%e6%80%bb%e5%85%89%e8%b7%af%e5%88%86%e6%9e%90" class="header-mark"></a><code>总光路分析</code></h2><hr>
+</div>
+
+        <div class="post-footer" id="post-footer">
+    <div class="post-info">
+        <div class="post-info-line">
+            <div class="post-info-mod">
+                <span>更新于 2023-02-09</span>
+            </div>
+            <div class="post-info-license"></div>
+        </div>
+        <div class="post-info-line">
+            <div class="post-info-md"><span><a class="link-to-mardown" href=/opticalnote/index.md target="_blank" rel="noopener noreferrer">阅读原始文档</a>
+                    </span></div>
+            <div class="post-info-share">
+                <span></span>
+            </div>
+        </div>
+    </div>
+
+    <div class="post-info-more">
+        <section class="post-tags"></section>
+        <section>
+            <span><a href="javascript:void(0);" onclick="window.history.back();">返回</a></span>&nbsp;|&nbsp;<span><a href="/">主页</a></span>
+        </section>
+    </div>
+
+    <div class="post-nav">
+            <a href="/story_1/" class="next" rel="next" title="Story_1">Story_1<i class="fas fa-angle-right fa-fw"></i></a></div>
+</div>
+</article></div>
+        </main><footer class="footer">
+        <div class="footer-container"><div class="footer-line">
+                    由 <a href="https://gohugo.io/" target="_blank" rel="noopener noreferrer" title="Hugo 0.110.0">Hugo</a> 强力驱动&nbsp;|&nbsp;主题 - <a href="https://github.com/HEIGE-PCloud/DoIt" target="_blank" rel="noopener noreferrer" title="DoIt 0.3.0"><i class="far fa-edit fa-fw"></i> DoIt</a>
+                </div><div class="footer-line"><i class="far fa-copyright fa-fw"></i><span itemprop="copyrightYear">2023</span><span class="author" itemprop="copyrightHolder">&nbsp;<a href="/" target="_blank" rel="noopener noreferrer">yangshu</a></span>&nbsp;|&nbsp;<span class="license">本博客所有文章除特別声明外，均采用 <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/"> CC BY-SA 4.0 </a> 许可协议，转载请注明出处。</span></div>
+            <div class="footer-line"></div>
+            <div class="footer-line">
+            </div>
+        </div><script>
+                    if('serviceWorker' in navigator) {
+                        navigator.serviceWorker
+                            .register('/sw.min.js', { scope: '/' })
+                            .then(function(registration) {
+                            });
+                
+                        navigator.serviceWorker
+                            .ready
+                            .then(function(registration) {
+                            });
+                    }
+                </script></footer></div>
+
+    <div id="fixed-buttons"><a href="#back-to-top" id="back-to-top-button" class="fixed-button" title="回到顶部">
+            <i class="fas fa-arrow-up fa-fw"></i>
+        </a><a href="#" id="view-comments" class="fixed-button" title="查看评论">
+            <i class="fas fa-comment fa-fw"></i>
+        </a>
+    </div><div id="cookieconsent-container"></div><div class="assets"><link rel="stylesheet" href="/lib/katex/katex.min.css"><link rel="preload" as="style" onload="this.onload=null;this.rel='stylesheet'" href="/lib/katex/copy-tex.min.css">
+        <noscript><link rel="stylesheet" href="/lib/katex/copy-tex.min.css"></noscript><link rel="stylesheet" href="/lib/cookieconsent/cookieconsent.min.css"><script type="text/javascript">window.config={"code":{"copyTitle":"复制到剪贴板","maxShownLines":42},"comment":{},"cookieconsent":{"content":{"dismiss":"同意","link":"了解更多","message":"本网站使用 Cookies 来改善您的浏览体验."},"enable":true,"palette":{"button":{"background":"#f0f0f0"},"popup":{"background":"#1aa3ff"}},"theme":"edgeless"},"data":{"desktop-header-typeit":"onetreey的六便士","mobile-header-typeit":"onetreey的六便士"},"math":{"delimiters":[{"display":true,"left":"$$","right":"$$"},{"display":true,"left":"\\[","right":"\\]"},{"display":false,"left":"$","right":"$"},{"display":false,"left":"\\(","right":"\\)"}],"strict":false},"search":{"distance":100,"findAllMatches":false,"fuseIndexURL":"/index.json","highlightTag":"em","ignoreFieldNorm":false,"ignoreLocation":false,"isCaseSensitive":false,"location":0,"maxResultLength":10,"minMatchCharLength":2,"noResultsFound":"没有找到结果","snippetLength":50,"threshold":0.3,"type":"fuse","useExtendedSearch":false},"typeit":{"cursorChar":"|","cursorSpeed":1000,"data":{"desktop-header-typeit":["desktop-header-typeit"],"mobile-header-typeit":["mobile-header-typeit"]},"duration":-1,"speed":100}};</script><script type="text/javascript" src="/lib/clipboard/clipboard.min.js"></script><script type="text/javascript" src="/lib/typeit/typeit.min.js"></script><script type="text/javascript" src="/lib/katex/katex.min.js" defer></script><script type="text/javascript" src="/lib/katex/auto-render.min.js" defer></script><script type="text/javascript" src="/lib/katex/copy-tex.min.js" defer></script><script type="text/javascript" src="/lib/katex/mhchem.min.js" defer></script><script type="text/javascript" src="/js/katex.min.js" defer></script><script type="text/javascript" src="/lib/cookieconsent/cookieconsent.min.js" defer></script><script type="text/javascript" src="/js/cookieconsent.min.js" defer></script><script type="text/javascript" src="/js/theme.min.js" defer></script></div>
+</body>
+
+</html>
