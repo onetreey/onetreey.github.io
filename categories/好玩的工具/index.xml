@@ -1,0 +1,15 @@
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+        <title>好玩的工具 - 分类 - onetreey 的六便士</title>
+        <link>https://onetreey.github.io/categories/%E5%A5%BD%E7%8E%A9%E7%9A%84%E5%B7%A5%E5%85%B7/</link>
+        <description>好玩的工具 - 分类 - onetreey 的六便士</description>
+        <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>251196507@qq.com (yangshu)</managingEditor>
+            <webMaster>251196507@qq.com (yangshu)</webMaster><lastBuildDate>Wed, 24 May 2023 20:51:06 &#43;0800</lastBuildDate><atom:link href="https://onetreey.github.io/categories/%E5%A5%BD%E7%8E%A9%E7%9A%84%E5%B7%A5%E5%85%B7/" rel="self" type="application/rss+xml" /><item>
+    <title>hugo学习笔记</title>
+    <link>https://onetreey.github.io/note/</link>
+    <pubDate>Wed, 24 May 2023 20:51:06 &#43;0800</pubDate><author>
+        <name>yangshu</name>
+    </author><guid>https://onetreey.github.io/note/</guid>
+    <description><![CDATA[创建新文档hugo new posts/blogtest/note.md]]></description>
+</item></channel>
+</rss>

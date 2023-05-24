@@ -4,7 +4,35 @@
         <link>https://onetreey.github.io/posts/</link>
         <description>所有文章 | onetreey 的六便士</description>
         <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>251196507@qq.com (yangshu)</managingEditor>
-            <webMaster>251196507@qq.com (yangshu)</webMaster><lastBuildDate>Sat, 11 Feb 2023 16:11:37 &#43;0800</lastBuildDate><atom:link href="https://onetreey.github.io/posts/" rel="self" type="application/rss+xml" /><item>
+            <webMaster>251196507@qq.com (yangshu)</webMaster><lastBuildDate>Wed, 24 May 2023 20:51:06 &#43;0800</lastBuildDate><atom:link href="https://onetreey.github.io/posts/" rel="self" type="application/rss+xml" /><item>
+    <title>hugo学习笔记</title>
+    <link>https://onetreey.github.io/note/</link>
+    <pubDate>Wed, 24 May 2023 20:51:06 &#43;0800</pubDate><author>
+        <name>yangshu</name>
+    </author><guid>https://onetreey.github.io/note/</guid>
+    <description><![CDATA[创建新文档hugo new posts/blogtest/note.md]]></description>
+</item><item>
+    <title>小知识点点</title>
+    <link>https://onetreey.github.io/blognote/</link>
+    <pubDate>Tue, 16 May 2023 15:01:06 &#43;0800</pubDate><author>
+        <name>yangshu</name>
+    </author><guid>https://onetreey.github.io/blognote/</guid>
+    <description><![CDATA[PPT上所有内容都要涉及到(具体而言，是表格上的数据)，方案建模要先有一个总体的建模，不只是探测噪声。 原位测量，即在 MOT 区让原子自由落体(先上]]></description>
+</item><item>
+    <title>爱做梦的蟑螂</title>
+    <link>https://onetreey.github.io/story_1/</link>
+    <pubDate>Mon, 15 May 2023 15:01:06 &#43;0800</pubDate><author>
+        <name>yangshu</name>
+    </author><guid>https://onetreey.github.io/story_1/</guid>
+    <description><![CDATA[你好，美好的故事值得书写。 0213故事灵感有一回，一只名叫格里高利·萨姆沙的蟑螂，梦见自己变成一只叫做弗朗茨·卡夫卡的蟑螂，梦见自己是个作家]]></description>
+</item><item>
+    <title>MTS</title>
+    <link>https://onetreey.github.io/mts/</link>
+    <pubDate>Fri, 24 Feb 2023 15:39:48 &#43;0800</pubDate><author>
+        <name>yangshu</name>
+    </author><guid>https://onetreey.github.io/mts/</guid>
+    <description><![CDATA[调制转移稳频自由运转状态的激光器容易受外界因素影响使得激光器频率抖动过大，无法满足应用需求，因此需要对激光器采取稳频技术。 稳频的基本原理是将]]></description>
+</item><item>
     <title>我的第一篇博客</title>
     <link>https://onetreey.github.io/first/</link>
     <pubDate>Sat, 11 Feb 2023 16:11:37 &#43;0800</pubDate><author>
@@ -12,19 +40,12 @@
     </author><guid>https://onetreey.github.io/first/</guid>
     <description><![CDATA[Hello，我的第一篇静态博客！ 工作中我们会遇见很多有趣的知识，生活中我们会遇见更多有趣的事情。用博客记录它们不失为一种消遣的方式。 与学术论]]></description>
 </item><item>
-    <title>博客记录的开始</title>
+    <title>方案建模笔记</title>
     <link>https://onetreey.github.io/first_post/</link>
     <pubDate>Sat, 11 Feb 2023 16:10:37 &#43;0800</pubDate><author>
         <name>yangshu</name>
     </author><guid>https://onetreey.github.io/first_post/</guid>
-    <description><![CDATA[博客记录的开始 Hello，我的第一篇静态博客！ 工作中我们会遇见很多有趣的知识，生活中我们会遇见更多有趣的事情。用博客记录它们不失为一种消遣的]]></description>
-</item><item>
-    <title>Story_1</title>
-    <link>https://onetreey.github.io/story_1/</link>
-    <pubDate>Sat, 11 Feb 2023 16:09:37 &#43;0800</pubDate><author>
-        <name>yangshu</name>
-    </author><guid>https://onetreey.github.io/story_1/</guid>
-    <description><![CDATA[你好，美好的故事值得书写。 0213故事灵感很久很久以前，这里有一个神奇的村庄，名字叫七星村。这个村庄的天气由他们自己决定。每天晚上，大家一起]]></description>
+    <description><![CDATA[方案建模 AC-Stark效应将拉曼光频率调节到与原子的共振频率失谐约1 MHz然后照射到原子上，这种 情况下原子受激拉曼跃迁可以忽略而光频移大小]]></description>
 </item><item>
     <title>Opticalnote</title>
     <link>https://onetreey.github.io/opticalnote/</link>
