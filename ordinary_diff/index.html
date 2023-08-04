@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="robots" content="noodp" />
+    <title>常微分方程组的解法 - onetreey 的六便士</title><meta name="Description" content="the tree is growing..."><meta property="og:title" content="常微分方程组的解法" />
+<meta property="og:description" content="求解三能级 Raman 跃迁问题时不可避免地要用到常微分方程的相关知识，这里给出常系数齐次线性微分方程组的一种解法。 常系数线性微分方程组常系数齐次线性微" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://onetreey.github.io/ordinary_diff/" /><meta property="og:image" content="https://onetreey.github.io/images/avatar.png"/><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2023-08-03T00:00:00+00:00" />
+<meta property="article:modified_time" content="2023-08-03T20:50:47+08:00" /><meta property="og:site_name" content="onetreey的六便士" />
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:image" content="https://onetreey.github.io/images/avatar.png"/>
+
+<meta name="twitter:title" content="常微分方程组的解法"/>
+<meta name="twitter:description" content="求解三能级 Raman 跃迁问题时不可避免地要用到常微分方程的相关知识，这里给出常系数齐次线性微分方程组的一种解法。 常系数线性微分方程组常系数齐次线性微"/>
+<meta name="application-name" content="onetreey的六便士">
+<meta name="apple-mobile-web-app-title" content="onetreey的六便士">
+
+<meta name="theme-color" content="#f8f8f8"><meta name="msapplication-TileColor" content="#da532c"><link rel="icon" href="/images/avatar.png"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5"><link rel="manifest" href="/site.webmanifest"><link rel="canonical" href="https://onetreey.github.io/ordinary_diff/" /><link rel="prev" href="https://onetreey.github.io/tri_ellipse/" /><link rel="stylesheet" href="/lib/normalize/normalize.min.css"><link rel="stylesheet" href="/css/color.css"><link rel="stylesheet" href="/css/style.min.css"><link rel="preload" as="style" onload="this.onload=null;this.rel='stylesheet'" href="/lib/fontawesome-free/all.min.css">
+        <noscript><link rel="stylesheet" href="/lib/fontawesome-free/all.min.css"></noscript><link rel="preload" as="style" onload="this.onload=null;this.rel='stylesheet'" href="/lib/animate/animate.min.css">
+        <noscript><link rel="stylesheet" href="/lib/animate/animate.min.css"></noscript>
+    
+    
+    
+    <script type="application/ld+json">
+    {
+        "@context": "http://schema.org",
+        "@type": "BlogPosting",
+        "headline": "常微分方程组的解法",
+        "inLanguage": "zh-CN",
+        "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": "https:\/\/onetreey.github.io\/ordinary_diff\/"
+        },"genre": "posts","keywords": "常微分方程组","wordcount":  735 ,
+        "url": "https:\/\/onetreey.github.io\/ordinary_diff\/","datePublished": "2023-08-03T00:00:00+00:00","dateModified": "2023-08-03T20:50:47+08:00","publisher": {
+            "@type": "Organization",
+            "name": "","logo": {
+                    "@type": "ImageObject",
+                    "url": "https:\/\/onetreey.github.io\/images\/avatar.png",
+                    "width":  1280 ,
+                    "height":  720 
+                }},"author": {
+                "@type": "Person",
+                "name": "yangshu"
+            },"description": ""
+    }
+    </script><script src="//instant.page/5.1.1" defer type="module" integrity="sha384-MWfCL6g1OTGsbSwfuMHc8+8J2u71/LA8dzlIN3ycajckxuZZmF+DNjdm7O6H3PSq"></script>
+</head>
+
+<body header-desktop="fixed" header-mobile="auto"><script type="text/javascript">
+        function setTheme(theme) {document.body.setAttribute('theme', theme); document.documentElement.style.setProperty('color-scheme', theme === 'light' ? 'light' : 'dark');}
+        function saveTheme(theme) {window.localStorage && localStorage.setItem('theme', theme);}
+        function getMeta(metaName) {const metas = document.getElementsByTagName('meta'); for (let i = 0; i < metas.length; i++) if (metas[i].getAttribute('name') === metaName) return metas[i]; return '';}
+        if (window.localStorage && localStorage.getItem('theme')) {let theme = localStorage.getItem('theme');theme === 'light' || theme === 'dark' || theme === 'black' ? setTheme(theme) : (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches ? setTheme('dark') : setTheme('light')); } else { if ('auto' === 'light' || 'auto' === 'dark' || 'auto' === 'black') setTheme('auto'), saveTheme('auto'); else saveTheme('auto'), window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches ? setTheme('dark') : setTheme('light');}
+        let metaColors = {'light': '#f8f8f8','dark': '#252627','black': '#000000'}
+        getMeta('theme-color').content = metaColors[document.body.getAttribute('theme')];
+    </script>
+    <div id="back-to-top"></div>
+    <div id="mask"></div><div class="wrapper"><header class="desktop" id="header-desktop">
+    <div class="header-wrapper">
+        <div class="header-title">
+            <a href="/" title="onetreey 的六便士"><img
+        class="logo"
+        loading="lazy"
+        src="/images/avatar.png"
+        srcset="/images/avatar.png, /images/avatar.png 1.5x, /images/avatar.png 2x"
+        sizes="auto"
+        alt="/images/avatar.png"
+        title="/images/avatar.png"><span id="desktop-header-typeit" class="typeit"></span></a>
+        </div>
+        <div class="menu">
+            <div class="menu-inner"><a class="menu-item" href="/posts/"> 文章 </a><a class="menu-item" href="/categories/"> 分类 </a><a class="menu-item" href="/tags/"> 标签 </a><a class="menu-item" href="/about/"> 关于 </a><span class="menu-item delimiter"></span><span class="menu-item search" id="search-desktop">
+                        <input type="text" placeholder="搜索文章标题或内容..." id="search-input-desktop">
+                        <a href="#" class="search-button search-toggle" id="search-toggle-desktop" title="搜索">
+                            <i class="fas fa-search fa-fw"></i>
+                        </a>
+                        <a href="#" class="search-button search-clear" id="search-clear-desktop" title="清空">
+                            <i class="fas fa-times-circle fa-fw"></i>
+                        </a>
+                        <span class="search-button search-loading" id="search-loading-desktop">
+                            <i class="fas fa-spinner fa-fw fa-spin"></i>
+                        </span>
+                    </span><a href="#" class="menu-item theme-select" title="切换主题">
+                    <i class="fas fa-adjust fa-fw"></i>
+                    <select class="color-theme-select" id="theme-select-desktop" title="切换主题">
+                        <option value="light">浅色</option>
+                        <option value="dark">深色</option>
+                        <option value="black">黑色</option>
+                        <option value="auto">跟随系统</option>
+                    </select>
+                </a></div>
+        </div>
+    </div>
+</header><header class="mobile" id="header-mobile">
+    <div class="header-container">
+        <div class="header-wrapper">
+            <div class="header-title">
+                <a href="/" title="onetreey 的六便士"><img
+        class="logo"
+        loading="lazy"
+        src="/images/avatar.png"
+        srcset="/images/avatar.png, /images/avatar.png 1.5x, /images/avatar.png 2x"
+        sizes="auto"
+        alt="/images/avatar.png"
+        title="/images/avatar.png"><span id="mobile-header-typeit" class="typeit"></span></a>
+            </div>
+            <div class="menu-toggle" id="menu-toggle-mobile">
+                <span></span><span></span><span></span>
+            </div>
+        </div>
+        <div class="menu" id="menu-mobile"><div class="search-wrapper">
+                    <div class="search mobile" id="search-mobile">
+                        <input type="text" placeholder="搜索文章标题或内容..." id="search-input-mobile">
+                        <a href="#" class="search-button search-toggle" id="search-toggle-mobile" title="搜索">
+                            <i class="fas fa-search fa-fw"></i>
+                        </a>
+                        <a href="#" class="search-button search-clear" id="search-clear-mobile" title="清空">
+                            <i class="fas fa-times-circle fa-fw"></i>
+                        </a>
+                        <span class="search-button search-loading" id="search-loading-mobile">
+                            <i class="fas fa-spinner fa-fw fa-spin"></i>
+                        </span>
+                    </div>
+                    <a href="#" class="search-cancel" id="search-cancel-mobile">
+                        取消
+                    </a>
+                </div><a class="menu-item" href="/posts/" title="">文章</a><a class="menu-item" href="/categories/" title="">分类</a><a class="menu-item" href="/tags/" title="">标签</a><a class="menu-item" href="/about/" title="">关于</a><a href="#" class="menu-item theme-select" title="切换主题">
+                <i class="fas fa-adjust fa-fw"></i>
+                <select class="color-theme-select" id="theme-select-mobile" title="切换主题">
+                    <option value="light">浅色</option>
+                    <option value="dark">深色</option>
+                    <option value="black">黑色</option>
+                    <option value="auto">跟随系统</option>
+                </select>
+            </a></div>
+    </div>
+</header>
+<div class="search-dropdown desktop">
+    <div id="search-dropdown-desktop"></div>
+</div>
+<div class="search-dropdown mobile">
+    <div id="search-dropdown-mobile"></div>
+</div>
+<main class="main">
+            <div class="container"><div class="toc" id="toc-auto">
+        <h2 class="toc-title">目录</h2>
+        <div class="toc-content" id="toc-content-auto"><nav id="TableOfContents">
+  <ul>
+    <li>
+      <ul>
+        <li><a href="#常系数线性微分方程组">常系数线性微分方程组</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav></div>
+    </div><script>document.getElementsByTagName("main")[0].setAttribute("pageStyle", "normal")</script><script>document.getElementsByTagName("main")[0].setAttribute("autoTOC", "true")</script><article class="page single"><h1 class="single-title animate__animated animate__flipInX">常微分方程组的解法</h1><div class="post-meta">
+            <div class="post-meta-line">
+                <span class="post-author"><i class="author fas fa-user-circle fa-fw"></i><a href="/" title="Author" rel=" author" class="author">yangshu</a>
+                </span>&nbsp;<span class="post-category">收录于 </span>&nbsp;<span class="post-category">类别 <a href="/categories/%E4%B8%80%E7%82%B9%E7%82%B9%E6%95%B0%E5%AD%A6/"><i class="far fa-folder fa-fw"></i>一点点数学</a></span></div>
+            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw"></i>&nbsp;<time datetime="2023-08-03">2023-08-03</time>&nbsp;<i class="far fa-edit fa-fw"></i>&nbsp;<time datetime="2023-08-03">2023-08-03</time>&nbsp;<i class="fas fa-pencil-alt fa-fw"></i>&nbsp;约 735 字&nbsp;
+                <i class="far fa-clock fa-fw"></i>&nbsp;预计阅读 2 分钟&nbsp;</div>
+        </div><div class="details toc" id="toc-static"  kept="">
+                <div class="details-summary toc-title">
+                    <span>目录</span>
+                    <span><i class="details-icon fas fa-angle-right"></i></span>
+                </div>
+                <div class="details-content toc-content" id="toc-content-static"><nav id="TableOfContents">
+  <ul>
+    <li>
+      <ul>
+        <li><a href="#常系数线性微分方程组">常系数线性微分方程组</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav></div>
+            </div><div class="content" id="content"><p>求解三能级 Raman 跃迁问题时不可避免地要用到常微分方程的相关知识，这里给出常系数齐次线性微分方程组的一种解法。</p>
+<h3 id="常系数线性微分方程组" class="headerLink">
+    <a href="#%e5%b8%b8%e7%b3%bb%e6%95%b0%e7%ba%bf%e6%80%a7%e5%be%ae%e5%88%86%e6%96%b9%e7%a8%8b%e7%bb%84" class="header-mark"></a>常系数线性微分方程组</h3><p>常系数齐次线性微分方程组的一般形式为：</p>
+$$
+    \left\{ \begin{array}{l}
+    {{\dot x}_1} = {a_{11}}{x_1} + {a_{12}}{x_2}\\
+    {{\dot x}_2} = {a_{21}}{x_1} + {a_{22}}{x_2}
+    \end{array} \right.
+$$
+<p>写成矩阵形式为：</p>
+$$
+\frac{d}{d t}\left[\begin{array}{l}
+x_1 \\
+x_2
+\end{array}\right]=\left[\begin{array}{ll}
+a_{11} & a_{12} \\
+a_{21} & a_{22}
+\end{array}\right]\left[\begin{array}{l}
+x_1 \\
+x_2
+\end{array}\right]
+$$
+<p>从而得到：</p>
+$$
+{\left[\begin{array}{cc}
+a_{11}-D & a_{12} \\
+a_{21} & a_{22}-D
+\end{array}\right]\left[\begin{array}{l}
+x_1 \\
+x_2
+\end{array}\right]=0} 
+$$
+<p>$D = \frac{d}{{dt}}$ 是微分算符，要得到非零解，则令：</p>
+$$
+\left|\begin{array}{cc}
+a_{11}-D & a_{12} \\
+a_{21} & a_{22}-D
+\end{array}\right|=0
+$$
+<p>解得：</p>
+$$
+    \Rightarrow \left\{ \begin{array}{l}
+    {D_1} = \frac{1}{2}\left[ {{a_{11}} + {a_{22}} + \sqrt {{{\left( {{a_{11}} -
+    {a_{22}}} \right)}^2} + 4{a_{12}}{a_{21}}} } \right] = {\lambda _1}\\
+    {D_2} = \frac{1}{2}\left[ {{a_{11}} + {a_{22}} - \sqrt {{{\left( {{a_{11}} -
+    {a_{22}}} \right)}^2} + 4{a_{12}}{a_{21}}} } \right] = {\lambda _2}
+    \end{array} \right.
+$$
+<p>将 ${D_1}$、${D_2}$ 代回矩阵方程 ，得到两个线性无关的解：</p>
+$$
+    \left\{\begin{array}{l}
+    \Phi_1=\left[\begin{array}{c}
+    1 \\
+    \frac{\lambda_1-a_{11}}{a_{12}}
+    \end{array}\right] c_1(t), \frac{d}{d t} c_1=\lambda_1 c_1 \\
+    \Phi_2=\left[\begin{array}{c}
+    1 \\
+    \frac{\lambda_2-a_{11}}{a_{12}}
+    \end{array}\right] c_2(t), \frac{d}{d t} c_2=\lambda_2 c_2
+    \end{array}\right.
+$$
+<p>由此推出：</p>
+$$
+    \left\{\begin{array}{l}
+    \Phi_1=\left[\begin{array}{c}
+    1 \\
+    \frac{\lambda_1-a_{11}}{a_{12}}
+    \end{array}\right] e^{\lambda_1\left(t-t_0\right)} c_1\left(t_0\right) \\
+    \Phi_2=\left[\begin{array}{c}
+    1 \\
+    \frac{\lambda_2-a_{11}}{a_{12}}
+    \end{array}\right] e^{\lambda_2\left(t-t_0\right)} c_2\left(t_0\right)
+    \end{array}\right. 
+$$
+<p>注：其中 ${\lambda_1}$ 、 ${\lambda_2}$ 是矩阵 $\begin{bmatrix}
+  a_{11}&a_{12}   \\
+  a_{21}&a_{22}
+\end{bmatrix}$ 的本征值，$\begin{bmatrix}
+1  \\
+{\frac{{{\lambda_1} - {a_{11}}}}{{{a_{12}}}}}
+\end{bmatrix}$ 、$\begin{bmatrix}
+1  \\
+{\frac{{{\lambda_2} - {a_{11}}}}{{{a_{12}}}}}
+\end{bmatrix}$  是该矩阵的相应的本征值对应的本征矢量。</p>
+<p>这样我们便可以得到 ${x_1}$，${x_2}$ 的通解：</p>
+$$
+\left[\begin{array}{l}x_{1} \\x_{2}\end{array}\right]=\left[\begin{array}{c}1 \\\frac{\lambda_{1}-a_{11}}{a_{12}}\end{array}\right] e^{\lambda_{1}\left(t-t_{0}\right)} c_{1}\left(t_{0}\right)+\left[\begin{array}{c}1 \\\frac{\lambda_{2}-a_{11}}{a_{12}}\end{array}\right] e^{\lambda_{2}\left(t-t_{0}\right)} c_{2}\left(t_{0}\right)
+$$
+<p>即：</p>
+$$
+\left[\begin{array}{l}x_{1} \\x_{2}\end{array}\right]=\left[\begin{array}{cc}e^{\lambda_{1}\left(t-t_{0}\right)} & e^{\lambda_{2}\left(t-t_{0}\right)} \\\frac{\lambda_{1}-a_{11}}{a_{12}} e^{\lambda_{1}\left(t-t_{0}\right)} & \frac{\lambda_{2}-a_{11}}{a_{12}} e^{\lambda_{2}\left(t-t_{0}\right)}\end{array}\right]\left[\begin{array}{l}c_{1}\left(t_{0}\right) \\c_{2}\left(t_{0}\right)\end{array}\right]
+$$
+<p>将上式简写为：</p>
+$$
+X(t) = \Phi (t)C({t_0})
+$$
+<p>代入${x_1}$，${x_2}$的初始条件得到：</p>
+$$
+\begin{array}{l}
+\Phi ({t_0})C({t_0}) = X({t_0})
+\Rightarrow C({t_0}) = {\Phi ^{ - 1}}({t_0})X({t_0})
+\end{array}
+$$
+<p>将此结果代回便得到：</p>
+$$
+X(t) = \Phi (t){\Phi ^{ - 1}}({t_0})X({t_0})
+$$
+<p>其中</p>
+$$
+\Phi(t)=\left[\begin{array}{cc}e^{\lambda_{1}\left(t-t_{0}\right)} & e^{\lambda_{2}\left(t-t_{0}\right)} \\\frac{\lambda_{1}-a_{11}}{a_{12}} e^{\lambda_{1}\left(t-t_{0}\right)} & \frac{\lambda_{2}-a_{11}}{a_{12}} e^{\lambda_{2}\left(t-t_{0}\right)}\end{array}\right]
+$$
+<p>若 ${\lambda_1}$ 是重根，利用公式</p>
+$$
+X(t) = \sum\limits_{j = 1}^k {{e^{{\lambda _j}t}}} \{ \sum\limits_{i = 0}^{{n_j}
+- 1} {{{(A - {\lambda _j}E)}^i}\frac{{{t^i}}}{{i!}}\} } {v_j}
+$$
+<p>计算，其中 ${v_j}$ 是系数矩阵的本征值 ${\lambda_j}$ 满足初始条件对应的本征矢量，${n_j}$ 为根 ${\lambda_j}$ 对应的重数。</p>
+<p>对非齐次常系数微分方程组，利用公式</p>
+$$
+X(t) = \Phi (t){\Phi ^{ - 1}}({t_0})X({t_0}) + \Phi (t)\int_{{t_0}}^t {{\Phi ^{
+- 1}}(s)f(s)} ds
+$$
+<p>进行计算。</p>
+<div class="details admonition tip open">
+        <div class="details-summary admonition-title">
+            <i class="icon fas fa-lightbulb fa-fw"></i>技巧<i class="details-icon fas fa-angle-right fa-fw"></i>
+        </div>
+        <div class="details-content">
+            <div class="admonition-content">事实上，当我们求解 Raman 跃迁问题时，遇到的方程组不一定是常系数的，所以一般需要先将其处理成常系数方程组再进行求解，常用的方法是同乘或同除以相关因子，以及对某对称项进行微分，等等。</div>
+        </div>
+    </div>
+</div>
+
+        <div class="post-footer" id="post-footer">
+    <div class="post-info">
+        <div class="post-info-line">
+            <div class="post-info-mod">
+                <span>更新于 2023-08-03&nbsp;<a class="git-hash" href="https://github.com/onetreey/onetreey.github.io/commit/3ba6ed50d073f746c8753b0d8ace3a91058c7468" target="_blank" title="commit by onetreey(251196507@qq.com) 3ba6ed50d073f746c8753b0d8ace3a91058c7468: 20230803" rel="noopener noreferrer">
+                                    <i class="fas fa-hashtag fa-fw"></i>3ba6ed5</a></span>
+            </div>
+            <div class="post-info-license"></div>
+        </div>
+        <div class="post-info-line">
+            <div class="post-info-md"><span><a class="link-to-mardown" href=/ordinary_diff/index.md target="_blank" rel="noopener noreferrer">阅读原始文档</a>
+                    </span></div>
+            <div class="post-info-share">
+                <span></span>
+            </div>
+        </div>
+    </div>
+
+    <div class="post-info-more">
+        <section class="post-tags"><i class="fas fa-tags fa-fw"></i>&nbsp;<a href="/tags/%E5%B8%B8%E5%BE%AE%E5%88%86%E6%96%B9%E7%A8%8B%E7%BB%84/">常微分方程组</a></section>
+        <section>
+            <span><a href="javascript:void(0);" onclick="window.history.back();">返回</a></span>&nbsp;|&nbsp;<span><a href="/">主页</a></span>
+        </section>
+    </div>
+
+    <div class="post-nav"><a href="/tri_ellipse/" class="prev" rel="prev" title="三角拟合与椭圆拟合"><i class="fas fa-angle-left fa-fw"></i>三角拟合与椭圆拟合</a></div>
+</div>
+</article></div>
+        </main><footer class="footer">
+        <div class="footer-container"><div class="footer-line">
+                    由 <a href="https://gohugo.io/" target="_blank" rel="noopener noreferrer" title="Hugo 0.110.0">Hugo</a> 强力驱动&nbsp;|&nbsp;主题 - <a href="https://github.com/HEIGE-PCloud/DoIt" target="_blank" rel="noopener noreferrer" title="DoIt 0.3.0"><i class="far fa-edit fa-fw"></i> DoIt</a>
+                </div><div class="footer-line"><i class="far fa-copyright fa-fw"></i><span itemprop="copyrightYear">2023</span><span class="author" itemprop="copyrightHolder">&nbsp;<a href="/" target="_blank" rel="noopener noreferrer">yangshu</a></span>&nbsp;|&nbsp;<span class="license">本博客所有文章除特別声明外，均采用 <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/"> CC BY-SA 4.0 </a> 许可协议，转载请注明出处。</span></div>
+            <div class="footer-line"></div>
+            <div class="footer-line">
+            </div>
+        </div><script>
+                    if('serviceWorker' in navigator) {
+                        navigator.serviceWorker
+                            .register('/sw.min.js', { scope: '/' })
+                            .then(function(registration) {
+                            });
+                
+                        navigator.serviceWorker
+                            .ready
+                            .then(function(registration) {
+                            });
+                    }
+                </script></footer></div>
+
+    <div id="fixed-buttons"><a href="#back-to-top" id="back-to-top-button" class="fixed-button" title="回到顶部">
+            <i class="fas fa-arrow-up fa-fw"></i>
+        </a><a href="#" id="view-comments" class="fixed-button" title="查看评论">
+            <i class="fas fa-comment fa-fw"></i>
+        </a>
+    </div><div id="cookieconsent-container"></div><div class="assets"><link rel="stylesheet" href="/lib/katex/katex.min.css"><link rel="preload" as="style" onload="this.onload=null;this.rel='stylesheet'" href="/lib/katex/copy-tex.min.css">
+        <noscript><link rel="stylesheet" href="/lib/katex/copy-tex.min.css"></noscript><link rel="stylesheet" href="/lib/cookieconsent/cookieconsent.min.css"><script type="text/javascript">window.config={"code":{"copyTitle":"复制到剪贴板","maxShownLines":42},"comment":{},"cookieconsent":{"content":{"dismiss":"同意","link":"了解更多","message":"本网站使用 Cookies 来改善您的浏览体验."},"enable":true,"palette":{"button":{"background":"#f0f0f0"},"popup":{"background":"#1aa3ff"}},"theme":"edgeless"},"data":{"desktop-header-typeit":"onetreey的六便士","mobile-header-typeit":"onetreey的六便士"},"math":{"delimiters":[{"display":true,"left":"$$","right":"$$"},{"display":true,"left":"\\[","right":"\\]"},{"display":false,"left":"$","right":"$"},{"display":false,"left":"\\(","right":"\\)"}],"strict":false},"search":{"distance":100,"findAllMatches":false,"fuseIndexURL":"/index.json","highlightTag":"em","ignoreFieldNorm":false,"ignoreLocation":false,"isCaseSensitive":false,"location":0,"maxResultLength":10,"minMatchCharLength":2,"noResultsFound":"没有找到结果","snippetLength":50,"threshold":0.3,"type":"fuse","useExtendedSearch":false},"typeit":{"cursorChar":"|","cursorSpeed":1000,"data":{"desktop-header-typeit":["desktop-header-typeit"],"mobile-header-typeit":["mobile-header-typeit"]},"duration":-1,"speed":100}};</script><script type="text/javascript" src="/lib/clipboard/clipboard.min.js"></script><script type="text/javascript" src="/lib/typeit/typeit.min.js"></script><script type="text/javascript" src="/lib/katex/katex.min.js" defer></script><script type="text/javascript" src="/lib/katex/auto-render.min.js" defer></script><script type="text/javascript" src="/lib/katex/copy-tex.min.js" defer></script><script type="text/javascript" src="/lib/katex/mhchem.min.js" defer></script><script type="text/javascript" src="/js/katex.min.js" defer></script><script type="text/javascript" src="/lib/cookieconsent/cookieconsent.min.js" defer></script><script type="text/javascript" src="/js/cookieconsent.min.js" defer></script><script type="text/javascript" src="/js/theme.min.js" defer></script></div>
+</body>
+
+</html>

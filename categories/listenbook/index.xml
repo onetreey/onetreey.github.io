@@ -1,0 +1,22 @@
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+        <title>listenbook - 分类 - onetreey 的六便士</title>
+        <link>https://onetreey.github.io/categories/listenbook/</link>
+        <description>listenbook - 分类 - onetreey 的六便士</description>
+        <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>251196507@qq.com (yangshu)</managingEditor>
+            <webMaster>251196507@qq.com (yangshu)</webMaster><lastBuildDate>Tue, 11 Jul 2023 00:00:00 &#43;0000</lastBuildDate><atom:link href="https://onetreey.github.io/categories/listenbook/" rel="self" type="application/rss+xml" /><item>
+    <title>文献阅读</title>
+    <link>https://onetreey.github.io/mts/</link>
+    <pubDate>Tue, 11 Jul 2023 00:00:00 &#43;0000</pubDate><author>
+        <name>yangshu</name>
+    </author><guid>https://onetreey.github.io/mts/</guid>
+    <description><![CDATA[Raman跃迁原子干涉技术利用激光操控原子, 利用激光与原子相互作用来改变原子动量, 我们通常采用受激拉曼跃迁方式来实现这种相互作用。在受激拉曼]]></description>
+</item><item>
+    <title>批判性思维</title>
+    <link>https://onetreey.github.io/listenbook/</link>
+    <pubDate>Wed, 31 May 2023 00:00:00 &#43;0000</pubDate><author>
+        <name>yangshu</name>
+    </author><guid>https://onetreey.github.io/listenbook/</guid>
+    <description><![CDATA[自证预言自证式预言是指开始某一件事情时自己对其的判断会影响整件事情的走向。一般而言，消极的自证预言会导致消极的行为，最终带来消极的结果，比如]]></description>
+</item></channel>
+</rss>

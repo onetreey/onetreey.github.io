@@ -1,0 +1,15 @@
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+        <title>“椭圆拟合” - 标签 - onetreey 的六便士</title>
+        <link>https://onetreey.github.io/tags/%E6%A4%AD%E5%9C%86%E6%8B%9F%E5%90%88/</link>
+        <description>“椭圆拟合” - 标签 - onetreey 的六便士</description>
+        <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>251196507@qq.com (yangshu)</managingEditor>
+            <webMaster>251196507@qq.com (yangshu)</webMaster><lastBuildDate>Thu, 03 Aug 2023 00:00:00 &#43;0000</lastBuildDate><atom:link href="https://onetreey.github.io/tags/%E6%A4%AD%E5%9C%86%E6%8B%9F%E5%90%88/" rel="self" type="application/rss+xml" /><item>
+    <title>三角拟合与椭圆拟合</title>
+    <link>https://onetreey.github.io/tri_ellipse/</link>
+    <pubDate>Thu, 03 Aug 2023 00:00:00 &#43;0000</pubDate><author>
+        <name>yangshu</name>
+    </author><guid>https://onetreey.github.io/tri_ellipse/</guid>
+    <description><![CDATA[三角拟合我们进行拟合的数据间的理论关系式为 $$ y= A+B\cos(x+\phi) $$ 可将它化为形式 $$ y= A+B\cos x \cos \phi - B\sin x\sin \phi $$ 令，$C= B\cos x$,$D= B\sin \phi$ ，则 $$ y= A+C \cos \phi - D\sin \phi $$ 可以利用线性拟]]></description>
+</item></channel>
+</rss>
