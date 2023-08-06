@@ -99,10 +99,10 @@ $${{< /math >}}
   a_{21}&a_{22}
 \end{bmatrix}${{< /math >}} 的本征值，{{< math >}}$\begin{bmatrix}
 1  \\
-\frac{\lambda_1} - {a_{11}}{a_{12}}
+\frac{\lambda_1 - a_{11}}{a_{12}}
 \end{bmatrix}${{< /math >}} 、{{< math >}}$\begin{bmatrix}
 1  \\
-\frac{\lambda_2} - {a_{11}}{a_{12}}
+\frac{\lambda_2 - a_{11}}{a_{12}}
 \end{bmatrix}${{< /math >}}  是该矩阵的相应的本征值对应的本征矢量。
 
 这样我们便可以得到 ${x_1}$，${x_2}$ 的通解：
@@ -146,18 +146,18 @@ $${{< /math >}}
 
 若 ${\lambda_1}$ 是重根，利用公式
 
-{{< math >}}$$
-X(t) = \sum\limits_{j = 1}^k {{e^{{\lambda _j}t}}} \{ \sum\limits_{i = 0}^{{n_j}
-- 1} {{{(A - {\lambda _j}E)}^i}\frac{{{t^i}}}{{i!}}\} } {v_j}
-$${{< /math >}}
+% {{< math >}}$$
+% X(t) = \sum \limits_{j = 1}^k e^{\lambda _j t} \{ \sum\limits_{i = 0}^{{n_j}
+
+% - 1} {{{(A - {\lambda _j}E)}^i}\frac{{{t^i}}}{{i!}}\} } {v_j}
+% $${{< /math >}}
 
 计算，其中 ${v_j}$ 是系数矩阵的本征值 ${\lambda_j}$ 满足初始条件对应的本征矢量，${n_j}$ 为根 ${\lambda_j}$ 对应的重数。
 
 对非齐次常系数微分方程组，利用公式
 
 {{< math >}}$$
-X(t) = \Phi (t){\Phi ^{ - 1}}({t_0})X({t_0}) + \Phi (t)\int_{{t_0}}^t {{\Phi ^{
-- 1}}(s)f(s)} ds
+X(t) = \Phi (t){\Phi ^{ - 1}}({t_0})X({t_0}) + \Phi (t)\int_{{t_0}}^t {{\Phi ^{- 1}}(s)f(s)} ds
 $${{< /math >}}
 
 进行计算。
