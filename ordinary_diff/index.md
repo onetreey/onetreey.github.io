@@ -29,7 +29,6 @@ x_2
 \end{array}\right]
 $${{< /math >}}
 
-
 从而得到：
 
 {{< math >}}$$
@@ -79,7 +78,6 @@ $${{< /math >}}
 
 由此推出：
 
-
 {{< math >}}$$
     \left\{\begin{array}{l}
     \Phi_1=\left[\begin{array}{c}
@@ -90,9 +88,8 @@ $${{< /math >}}
     1 \\
     \frac{\lambda_2-a_{11}}{a_{12}}
     \end{array}\right] e^{\lambda_2\left(t-t_0\right)} c_2\left(t_0\right)
-    \end{array}\right. 
+    \end{array}\right.
 $${{< /math >}}
-
 
 注：其中 ${\lambda_1}$ 、 ${\lambda_2}$ 是矩阵 {{< math >}}$\begin{bmatrix}
   a_{11}&a_{12}   \\
@@ -146,11 +143,9 @@ $${{< /math >}}
 
 若 ${\lambda_1}$ 是重根，利用公式
 
-% {{< math >}}$$
-% X(t) = \sum \limits_{j = 1}^k e^{\lambda _j t} \{ \sum\limits_{i = 0}^{{n_j}
-
-% - 1} {{{(A - {\lambda _j}E)}^i}\frac{{{t^i}}}{{i!}}\} } {v_j}
-% $${{< /math >}}
+{{< math >}}$$
+X(t) = \sum \limits_{j = 1}^k e^{\lambda_j t} \{ \sum\limits_{i = 0}^{{n_j} - 1} {{{(A - {\lambda _j}E)}^i}\frac{{{t^i}}}{{i!}}\} } {v_j}
+$${{< /math >}}
 
 计算，其中 ${v_j}$ 是系数矩阵的本征值 ${\lambda_j}$ 满足初始条件对应的本征矢量，${n_j}$ 为根 ${\lambda_j}$ 对应的重数。
 
@@ -161,7 +156,6 @@ X(t) = \Phi (t){\Phi ^{ - 1}}({t_0})X({t_0}) + \Phi (t)\int_{{t_0}}^t {{\Phi ^{-
 $${{< /math >}}
 
 进行计算。
-
 
 {{< admonition tip >}}
 事实上，当我们求解 Raman 跃迁问题时，遇到的方程组不一定是常系数的，所以一般需要先将其处理成常系数方程组再进行求解，常用的方法是同乘或同除以相关因子，以及对某对称项进行微分，等等。

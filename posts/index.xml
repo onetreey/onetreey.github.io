@@ -17,7 +17,7 @@
     <pubDate>Thu, 03 Aug 2023 00:00:00 &#43;0000</pubDate><author>
         <name>yangshu</name>
     </author><guid>https://onetreey.github.io/tri_ellipse/</guid>
-    <description><![CDATA[三角拟合我们进行拟合的数据间的理论关系式为 $$ y= A+B\cos(x+\phi) $$ 可将它化为形式 $$ y= A+B\cos x \cos \phi - B\sin x\sin \phi $$ 令，$C= B\cos x$,$D= B\sin \phi$ ，则 $$ y= A+C \cos \phi - D\sin \phi $$ 可以利用线性拟]]></description>
+    <description><![CDATA[三角拟合我们进行拟合的数据间的理论关系式为 $$ y= A+B\cos(x+\phi) $$ 可将它化为形式 $$ y= A+B\cos x \cos \phi - B\sin x\sin \phi $$ 令，$C= B\cos x$,$D= B\sin \phi$，则 $$ y= A+C \cos \phi - D\sin \phi $$ 可以利]]></description>
 </item><item>
     <title>昌耀的诗</title>
     <link>https://onetreey.github.io/changyao/</link>
