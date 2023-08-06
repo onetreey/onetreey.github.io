@@ -102,7 +102,7 @@ $${{< /math >}}
 {\frac{{{\lambda_1} - {a_{11}}}}{{{a_{12}}}}}
 \end{bmatrix}${{< /math >}} 、{{< math >}}$\begin{bmatrix}
 1  \\
-{\frac{{{\lambda_2} - {a_{11}}}}{{{a_{12}}}}}
+\frac{\lambda_2} - {a_{11}}{a_{12}}
 \end{bmatrix}${{< /math >}}  是该矩阵的相应的本征值对应的本征矢量。
 
 这样我们便可以得到 ${x_1}$，${x_2}$ 的通解：
