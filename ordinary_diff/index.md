@@ -141,18 +141,18 @@ $${{< /math >}}
 \Phi(t)=\left[\begin{array}{cc}e^{\lambda_{1}\left(t-t_{0}\right)} & e^{\lambda_{2}\left(t-t_{0}\right)} \\\frac{\lambda_{1}-a_{11}}{a_{12}} e^{\lambda_{1}\left(t-t_{0}\right)} & \frac{\lambda_{2}-a_{11}}{a_{12}} e^{\lambda_{2}\left(t-t_{0}\right)}\end{array}\right]
 $${{< /math >}}
 
-若 ${\lambda_1}$ 是重根，利用公式
+若 $\lambda_1$ 是重根，利用公式
 
 {{< math >}}$$
-X(t) = \sum \limits_{j = 1}^k e^{\lambda_j t} \{ \sum\limits_{i = 0}^{{n_j} - 1} {{{(A - {\lambda _j}E)}^i}\frac{{{t^i}}}{{i!}}\} } {v_j}
+X(t) = \sum \limits_{j = 1}^k e^{\lambda_j t} \{ \sum\limits_{i = 0}^{n_j - 1} {(A - \lambda_j E)}^i \frac{t^i}{i!}\} {v_j}
 $${{< /math >}}
 
-计算，其中 ${v_j}$ 是系数矩阵的本征值 ${\lambda_j}$ 满足初始条件对应的本征矢量，${n_j}$ 为根 ${\lambda_j}$ 对应的重数。
+计算，其中 ${v_j}$ 是系数矩阵的本征值 $\lambda_j$ 满足初始条件对应的本征矢量，${n_j}$ 为根 $\lambda_j$ 对应的重数。
 
 对非齐次常系数微分方程组，利用公式
 
 {{< math >}}$$
-X(t) = \Phi (t){\Phi ^{ - 1}}({t_0})X({t_0}) + \Phi (t)\int_{{t_0}}^t {{\Phi ^{- 1}}(s)f(s)} ds
+X(t) = \Phi (t)\Phi^{-1}({t_0})X({t_0}) + \Phi (t)\int_{t_0}^t \Phi^{-1}(s)f(s) ds
 $${{< /math >}}
 
 进行计算。
