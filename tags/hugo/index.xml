@@ -4,12 +4,12 @@
         <link>https://onetreey.github.io/tags/hugo/</link>
         <description>hugo - 标签 - onetreey 的六便士</description>
         <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>251196507@qq.com (yangshu)</managingEditor>
-            <webMaster>251196507@qq.com (yangshu)</webMaster><lastBuildDate>Wed, 24 May 2023 20:51:06 &#43;0800</lastBuildDate><atom:link href="https://onetreey.github.io/tags/hugo/" rel="self" type="application/rss+xml" /><item>
-    <title>hugo学习笔记</title>
-    <link>https://onetreey.github.io/note/</link>
-    <pubDate>Wed, 24 May 2023 20:51:06 &#43;0800</pubDate><author>
+            <webMaster>251196507@qq.com (yangshu)</webMaster><lastBuildDate>Tue, 16 May 2023 15:01:06 &#43;0800</lastBuildDate><atom:link href="https://onetreey.github.io/tags/hugo/" rel="self" type="application/rss+xml" /><item>
+    <title>hugo 博客搭建纪要</title>
+    <link>https://onetreey.github.io/blognote/</link>
+    <pubDate>Tue, 16 May 2023 15:01:06 &#43;0800</pubDate><author>
         <name>yangshu</name>
-    </author><guid>https://onetreey.github.io/note/</guid>
-    <description><![CDATA[创建新文档hugo new posts/blogtest/note.md]]></description>
+    </author><guid>https://onetreey.github.io/blognote/</guid>
+    <description><![CDATA[首先需要 hugo 建立站点， 然后 hugo server 查看本地博客，作为一个预览。 1 2 hugo hugo server 之后需要将本地博客推到远端库，具体而言： 1 2 3 4 5 git init #重置 `.git` 库 git add . #添]]></description>
 </item></channel>
 </rss>
