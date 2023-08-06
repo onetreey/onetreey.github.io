@@ -99,7 +99,7 @@ $${{< /math >}}
   a_{21}&a_{22}
 \end{bmatrix}${{< /math >}} 的本征值，{{< math >}}$\begin{bmatrix}
 1  \\
-{\frac{{{\lambda_1} - {a_{11}}}}{{{a_{12}}}}}
+\frac{\lambda_1} - {a_{11}}{a_{12}}
 \end{bmatrix}${{< /math >}} 、{{< math >}}$\begin{bmatrix}
 1  \\
 \frac{\lambda_2} - {a_{11}}{a_{12}}
