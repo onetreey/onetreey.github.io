@@ -7,13 +7,6 @@
             <webMaster>251196507@qq.com (yangshu)</webMaster><lastBuildDate>Thu, 03 Aug 2023 00:00:00 &#43;0000</lastBuildDate>
             <atom:link href="https://onetreey.github.io/index.xml" rel="self" type="application/rss+xml" />
         <item>
-    <title>常微分方程组的解法</title>
-    <link>https://onetreey.github.io/ordinary_diff/</link>
-    <pubDate>Thu, 03 Aug 2023 00:00:00 &#43;0000</pubDate><author>
-        <name>yangshu</name>
-    </author><guid>https://onetreey.github.io/ordinary_diff/</guid>
-    <description><![CDATA[求解三能级 Raman 跃迁问题时不可避免地要用到常微分方程的相关知识，这里给出常系数齐次线性微分方程组的一种解法。 常系数线性微分方程组常系数齐次线性微]]></description>
-</item><item>
     <title>三角拟合与椭圆拟合</title>
     <link>https://onetreey.github.io/tri_ellipse/</link>
     <pubDate>Thu, 03 Aug 2023 00:00:00 &#43;0000</pubDate><author>
@@ -76,5 +69,12 @@
         <name>yangshu</name>
     </author><guid>https://onetreey.github.io/mts/</guid>
     <description><![CDATA[Raman跃迁原子干涉技术利用激光操控原子, 利用激光与原子相互作用来改变原子动量, 我们通常采用受激拉曼跃迁方式来实现这种相互作用。在受激拉曼]]></description>
+</item><item>
+    <title>批判性思维</title>
+    <link>https://onetreey.github.io/listenbook/</link>
+    <pubDate>Wed, 31 May 2023 00:00:00 &#43;0000</pubDate><author>
+        <name>yangshu</name>
+    </author><guid>https://onetreey.github.io/listenbook/</guid>
+    <description><![CDATA[自证预言自证式预言是指开始某一件事情时自己对其的判断会影响整件事情的走向。一般而言，消极的自证预言会导致消极的行为，最终带来消极的结果，比如]]></description>
 </item></channel>
 </rss>
