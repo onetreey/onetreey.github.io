@@ -1,0 +1,15 @@
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+        <title>FVC - 标签 - onetreey 的六便士</title>
+        <link>https://onetreey.github.io/tags/fvc/</link>
+        <description>FVC - 标签 - onetreey 的六便士</description>
+        <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>251196507@qq.com (yangshu)</managingEditor>
+            <webMaster>251196507@qq.com (yangshu)</webMaster><lastBuildDate>Mon, 28 Aug 2023 00:00:00 &#43;0000</lastBuildDate><atom:link href="https://onetreey.github.io/tags/fvc/" rel="self" type="application/rss+xml" /><item>
+    <title>频率电压转换稳频（FVC）</title>
+    <link>https://onetreey.github.io/fvc/</link>
+    <pubDate>Mon, 28 Aug 2023 00:00:00 &#43;0000</pubDate><author>
+        <name>yangshu</name>
+    </author><guid>https://onetreey.github.io/fvc/</guid>
+    <description><![CDATA[原子干涉重力梯度测量追求更低的原子温度，因此一般对原子进行 Doppler 冷却后，在将原子上抛过程中还要对其进行偏振梯度冷却。与 Doppler冷却相比，偏]]></description>
+</item></channel>
+</rss>

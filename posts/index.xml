@@ -4,7 +4,14 @@
         <link>https://onetreey.github.io/posts/</link>
         <description>所有文章 | onetreey 的六便士</description>
         <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>251196507@qq.com (yangshu)</managingEditor>
-            <webMaster>251196507@qq.com (yangshu)</webMaster><lastBuildDate>Thu, 03 Aug 2023 00:00:00 &#43;0000</lastBuildDate><atom:link href="https://onetreey.github.io/posts/" rel="self" type="application/rss+xml" /><item>
+            <webMaster>251196507@qq.com (yangshu)</webMaster><lastBuildDate>Mon, 28 Aug 2023 00:00:00 &#43;0000</lastBuildDate><atom:link href="https://onetreey.github.io/posts/" rel="self" type="application/rss+xml" /><item>
+    <title>频率电压转换稳频（FVC）</title>
+    <link>https://onetreey.github.io/fvc/</link>
+    <pubDate>Mon, 28 Aug 2023 00:00:00 &#43;0000</pubDate><author>
+        <name>yangshu</name>
+    </author><guid>https://onetreey.github.io/fvc/</guid>
+    <description><![CDATA[原子干涉重力梯度测量追求更低的原子温度，因此一般对原子进行 Doppler 冷却后，在将原子上抛过程中还要对其进行偏振梯度冷却。与 Doppler冷却相比，偏]]></description>
+</item><item>
     <title>常微分方程组的解法</title>
     <link>https://onetreey.github.io/ordinary_diff/</link>
     <pubDate>Thu, 03 Aug 2023 00:00:00 &#43;0000</pubDate><author>
@@ -67,12 +74,5 @@
         <name>yangshu</name>
     </author><guid>https://onetreey.github.io/zhoumengdie/</guid>
     <description><![CDATA[我选择·二十一行我选择紫色， 我选择早睡早起早出早归。 我选择冷粥，破砚，晴窗， 忙人之所闲而闲人之所忙。 我选择非必不得已， 一切事，无分巨细，总自]]></description>
-</item><item>
-    <title>批判性思维</title>
-    <link>https://onetreey.github.io/criticalthinking/</link>
-    <pubDate>Wed, 31 May 2023 00:00:00 &#43;0000</pubDate><author>
-        <name>yangshu</name>
-    </author><guid>https://onetreey.github.io/criticalthinking/</guid>
-    <description><![CDATA[自证预言自证式预言是指开始某一件事情时自己对其的判断会影响整件事情的走向。一般而言，消极的自证预言会导致消极的行为，最终带来消极的结果，比如]]></description>
 </item></channel>
 </rss>

@@ -5,21 +5,21 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="robots" content="noodp" />
-    <title>常微分方程组的解法 - onetreey 的六便士</title><meta name="Description" content="the tree is growing..."><meta property="og:title" content="常微分方程组的解法" />
-<meta property="og:description" content="求解三能级 Raman 跃迁问题时不可避免地要用到常微分方程的相关知识，这里给出常系数齐次线性微分方程组的一种解法。 常系数线性微分方程组常系数齐次线性微" />
+    <title>频率电压转换稳频（FVC） - onetreey 的六便士</title><meta name="Description" content="the tree is growing..."><meta property="og:title" content="频率电压转换稳频（FVC）" />
+<meta property="og:description" content="原子干涉重力梯度测量追求更低的原子温度，因此一般对原子进行 Doppler 冷却后，在将原子上抛过程中还要对其进行偏振梯度冷却。与 Doppler冷却相比，偏" />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://onetreey.github.io/ordinary_diff/" /><meta property="og:image" content="https://onetreey.github.io/images/avatar.png"/><meta property="article:section" content="posts" />
-<meta property="article:published_time" content="2023-08-03T00:00:00+00:00" />
-<meta property="article:modified_time" content="2023-08-03T20:50:47+08:00" /><meta property="og:site_name" content="onetreey的六便士" />
+<meta property="og:url" content="https://onetreey.github.io/fvc/" /><meta property="og:image" content="https://onetreey.github.io/images/avatar.png"/><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2023-08-28T00:00:00+00:00" />
+<meta property="article:modified_time" content="2023-08-28T00:00:00+00:00" /><meta property="og:site_name" content="onetreey的六便士" />
 <meta name="twitter:card" content="summary_large_image"/>
 <meta name="twitter:image" content="https://onetreey.github.io/images/avatar.png"/>
 
-<meta name="twitter:title" content="常微分方程组的解法"/>
-<meta name="twitter:description" content="求解三能级 Raman 跃迁问题时不可避免地要用到常微分方程的相关知识，这里给出常系数齐次线性微分方程组的一种解法。 常系数线性微分方程组常系数齐次线性微"/>
+<meta name="twitter:title" content="频率电压转换稳频（FVC）"/>
+<meta name="twitter:description" content="原子干涉重力梯度测量追求更低的原子温度，因此一般对原子进行 Doppler 冷却后，在将原子上抛过程中还要对其进行偏振梯度冷却。与 Doppler冷却相比，偏"/>
 <meta name="application-name" content="onetreey的六便士">
 <meta name="apple-mobile-web-app-title" content="onetreey的六便士">
 
-<meta name="theme-color" content="#f8f8f8"><meta name="msapplication-TileColor" content="#da532c"><link rel="icon" href="/images/avatar.png"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5"><link rel="manifest" href="/site.webmanifest"><link rel="canonical" href="https://onetreey.github.io/ordinary_diff/" /><link rel="prev" href="https://onetreey.github.io/tri_ellipse/" /><link rel="next" href="https://onetreey.github.io/fvc/" /><link rel="stylesheet" href="/lib/normalize/normalize.min.css"><link rel="stylesheet" href="/css/color.css"><link rel="stylesheet" href="/css/style.min.css"><link rel="preload" as="style" onload="this.onload=null;this.rel='stylesheet'" href="/lib/fontawesome-free/all.min.css">
+<meta name="theme-color" content="#f8f8f8"><meta name="msapplication-TileColor" content="#da532c"><link rel="icon" href="/images/avatar.png"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5"><link rel="manifest" href="/site.webmanifest"><link rel="canonical" href="https://onetreey.github.io/fvc/" /><link rel="prev" href="https://onetreey.github.io/ordinary_diff/" /><link rel="stylesheet" href="/lib/normalize/normalize.min.css"><link rel="stylesheet" href="/css/color.css"><link rel="stylesheet" href="/css/style.min.css"><link rel="preload" as="style" onload="this.onload=null;this.rel='stylesheet'" href="/lib/fontawesome-free/all.min.css">
         <noscript><link rel="stylesheet" href="/lib/fontawesome-free/all.min.css"></noscript><link rel="preload" as="style" onload="this.onload=null;this.rel='stylesheet'" href="/lib/animate/animate.min.css">
         <noscript><link rel="stylesheet" href="/lib/animate/animate.min.css"></noscript>
     
@@ -29,13 +29,13 @@
     {
         "@context": "http://schema.org",
         "@type": "BlogPosting",
-        "headline": "常微分方程组的解法",
+        "headline": "频率电压转换稳频（FVC）",
         "inLanguage": "zh-CN",
         "mainEntityOfPage": {
             "@type": "WebPage",
-            "@id": "https:\/\/onetreey.github.io\/ordinary_diff\/"
-        },"genre": "posts","keywords": "常微分方程组","wordcount":  730 ,
-        "url": "https:\/\/onetreey.github.io\/ordinary_diff\/","datePublished": "2023-08-03T00:00:00+00:00","dateModified": "2023-08-03T20:50:47+08:00","publisher": {
+            "@id": "https:\/\/onetreey.github.io\/fvc\/"
+        },"genre": "posts","keywords": "FVC","wordcount":  932 ,
+        "url": "https:\/\/onetreey.github.io\/fvc\/","datePublished": "2023-08-28T00:00:00+00:00","dateModified": "2023-08-28T00:00:00+00:00","publisher": {
             "@type": "Organization",
             "name": "","logo": {
                     "@type": "ImageObject",
@@ -149,18 +149,15 @@
         <h2 class="toc-title">目录</h2>
         <div class="toc-content" id="toc-content-auto"><nav id="TableOfContents">
   <ul>
-    <li>
-      <ul>
-        <li><a href="#常系数线性微分方程组">常系数线性微分方程组</a></li>
-      </ul>
-    </li>
+    <li><a href="#基本原理">基本原理</a></li>
+    <li><a href="#电路实现">电路实现</a></li>
   </ul>
 </nav></div>
-    </div><script>document.getElementsByTagName("main")[0].setAttribute("pageStyle", "normal")</script><script>document.getElementsByTagName("main")[0].setAttribute("autoTOC", "true")</script><article class="page single"><h1 class="single-title animate__animated animate__flipInX">常微分方程组的解法</h1><div class="post-meta">
+    </div><script>document.getElementsByTagName("main")[0].setAttribute("pageStyle", "normal")</script><script>document.getElementsByTagName("main")[0].setAttribute("autoTOC", "true")</script><article class="page single"><h1 class="single-title animate__animated animate__flipInX">频率电压转换稳频（FVC）</h1><div class="post-meta">
             <div class="post-meta-line">
                 <span class="post-author"><i class="author fas fa-user-circle fa-fw"></i><a href="/" title="Author" rel=" author" class="author">yangshu</a>
-                </span>&nbsp;<span class="post-category">收录于 </span>&nbsp;<span class="post-category">类别 <a href="/categories/%E4%B8%80%E7%82%B9%E7%82%B9%E6%95%B0%E5%AD%A6/"><i class="far fa-folder fa-fw"></i>一点点数学</a></span></div>
-            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw"></i>&nbsp;<time datetime="2023-08-03">2023-08-03</time>&nbsp;<i class="far fa-edit fa-fw"></i>&nbsp;<time datetime="2023-08-03">2023-08-03</time>&nbsp;<i class="fas fa-pencil-alt fa-fw"></i>&nbsp;约 730 字&nbsp;
+                </span>&nbsp;<span class="post-category">收录于 </span>&nbsp;<span class="post-category">类别 <a href="/categories/%E6%BF%80%E5%85%89%E7%9A%84%E5%A5%A5%E7%A7%98/"><i class="far fa-folder fa-fw"></i>激光的奥秘</a></span></div>
+            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw"></i>&nbsp;<time datetime="2023-08-28">2023-08-28</time>&nbsp;<i class="far fa-edit fa-fw"></i>&nbsp;<time datetime="2023-08-28">2023-08-28</time>&nbsp;<i class="fas fa-pencil-alt fa-fw"></i>&nbsp;约 932 字&nbsp;
                 <i class="far fa-clock fa-fw"></i>&nbsp;预计阅读 2 分钟&nbsp;</div>
         </div><div class="details toc" id="toc-static"  kept="">
                 <div class="details-summary toc-title">
@@ -169,155 +166,38 @@
                 </div>
                 <div class="details-content toc-content" id="toc-content-static"><nav id="TableOfContents">
   <ul>
-    <li>
-      <ul>
-        <li><a href="#常系数线性微分方程组">常系数线性微分方程组</a></li>
-      </ul>
-    </li>
+    <li><a href="#基本原理">基本原理</a></li>
+    <li><a href="#电路实现">电路实现</a></li>
   </ul>
 </nav></div>
-            </div><div class="content" id="content"><p>求解三能级 Raman 跃迁问题时不可避免地要用到常微分方程的相关知识，这里给出常系数齐次线性微分方程组的一种解法。</p>
-<h3 id="常系数线性微分方程组" class="headerLink">
-    <a href="#%e5%b8%b8%e7%b3%bb%e6%95%b0%e7%ba%bf%e6%80%a7%e5%be%ae%e5%88%86%e6%96%b9%e7%a8%8b%e7%bb%84" class="header-mark"></a>常系数线性微分方程组</h3><p>常系数齐次线性微分方程组的一般形式为：</p>
-$$
-    \left\{ \begin{array}{l}
-    {\dot x_1} = {a_{11}}{x_1} + {a_{12}}{x_2}\\
-    {\dot x_2} = {a_{21}}{x_1} + {a_{22}}{x_2}
-    \end{array} \right.
-$$
-<p>写成矩阵形式为：</p>
-$$
-\frac{d}{d t}\left[\begin{array}{l}
-x_1 \\
-x_2
-\end{array}\right]=\left[\begin{array}{ll}
-a_{11} & a_{12} \\
-a_{21} & a_{22}
-\end{array}\right]\left[\begin{array}{l}
-x_1 \\
-x_2
-\end{array}\right]
-$$
-<p>从而得到：</p>
-$$
-{\left[\begin{array}{cc}
-a_{11}-D & a_{12} \\
-a_{21} & a_{22}-D
-\end{array}\right]\left[\begin{array}{l}
-x_1 \\
-x_2
-\end{array}\right]=0} 
-$$
-<p>$D = \frac{d}{{dt}}$ 是微分算符，要得到非零解，则令：</p>
-$$
-\left|\begin{array}{cc}
-a_{11}-D & a_{12} \\
-a_{21} & a_{22}-D
-\end{array}\right|=0
-$$
-<p>解得：</p>
-$$
-    \Rightarrow \left\{ \begin{array}{l}
-    {D_1} = \frac{1}{2}\left[ {{a_{11}} + {a_{22}} + \sqrt {{{\left( {{a_{11}} -
-    {a_{22}}} \right)}^2} + 4{a_{12}}{a_{21}}} } \right] = {\lambda _1}\\
-    {D_2} = \frac{1}{2}\left[ {{a_{11}} + {a_{22}} - \sqrt {{{\left( {{a_{11}} -
-    {a_{22}}} \right)}^2} + 4{a_{12}}{a_{21}}} } \right] = {\lambda _2}
-    \end{array} \right.
-$$
-<p>将 ${D_1}$、${D_2}$ 代回矩阵方程 ，得到两个线性无关的解：</p>
-$$
-    \left\{\begin{array}{l}
-    \Phi_1=\left[\begin{array}{c}
-    1 \\
-    \frac{\lambda_1-a_{11}}{a_{12}}
-    \end{array}\right] c_1(t), \frac{d}{d t} c_1=\lambda_1 c_1 \\
-    \Phi_2=\left[\begin{array}{c}
-    1 \\
-    \frac{\lambda_2-a_{11}}{a_{12}}
-    \end{array}\right] c_2(t), \frac{d}{d t} c_2=\lambda_2 c_2
-    \end{array}\right.
-$$
-<p>由此推出：</p>
-$$
-    \left\{\begin{array}{l}
-    \Phi_1=\left[\begin{array}{c}
-    1 \\
-    \frac{\lambda_1-a_{11}}{a_{12}}
-    \end{array}\right] e^{\lambda_1\left(t-t_0\right)} c_1\left(t_0\right) \\
-    \Phi_2=\left[\begin{array}{c}
-    1 \\
-    \frac{\lambda_2-a_{11}}{a_{12}}
-    \end{array}\right] e^{\lambda_2\left(t-t_0\right)} c_2\left(t_0\right)
-    \end{array}\right.
-$$
-<p>注：其中 ${\lambda_1}$ 、 ${\lambda_2}$ 是矩阵 $\begin{bmatrix}
-  a_{11}&a_{12}   \\
-  a_{21}&a_{22}
-\end{bmatrix}$ 的本征值，$\begin{bmatrix}
-1  \\
-\frac{\lambda_1 - a_{11}}{a_{12}}
-\end{bmatrix}$ 、$\begin{bmatrix}
-1  \\
-\frac{\lambda_2 - a_{11}}{a_{12}}
-\end{bmatrix}$  是该矩阵的相应的本征值对应的本征矢量。</p>
-<p>这样我们便可以得到 ${x_1}$，${x_2}$ 的通解：</p>
-$$
-\left[\begin{array}{l}x_{1} \\x_{2}\end{array}\right]=\left[\begin{array}{c}1 \\\frac{\lambda_{1}-a_{11}}{a_{12}}\end{array}\right] e^{\lambda_{1}\left(t-t_{0}\right)} c_{1}\left(t_{0}\right)+\left[\begin{array}{c}1 \\\frac{\lambda_{2}-a_{11}}{a_{12}}\end{array}\right] e^{\lambda_{2}\left(t-t_{0}\right)} c_{2}\left(t_{0}\right)
-$$
-<p>即：</p>
-$$
-\left[\begin{array}{l}x_{1} \\x_{2}\end{array}\right]=\left[\begin{array}{cc}e^{\lambda_{1}\left(t-t_{0}\right)} & e^{\lambda_{2}\left(t-t_{0}\right)} \\\frac{\lambda_{1}-a_{11}}{a_{12}} e^{\lambda_{1}\left(t-t_{0}\right)} & \frac{\lambda_{2}-a_{11}}{a_{12}} e^{\lambda_{2}\left(t-t_{0}\right)}\end{array}\right]\left[\begin{array}{l}c_{1}\left(t_{0}\right) \\c_{2}\left(t_{0}\right)\end{array}\right]
-$$
-<p>将上式简写为：</p>
-$$
-X(t) = \Phi (t)C({t_0})
-$$
-<p>代入${x_1}$，${x_2}$的初始条件得到：</p>
-$$
-\begin{array}{l}
-\Phi ({t_0})C({t_0}) = X({t_0})
-\Rightarrow C({t_0}) = {\Phi ^{ - 1}}({t_0})X({t_0})
-\end{array}
-$$
-<p>将此结果代回便得到：</p>
-$$
-X(t) = \Phi (t){\Phi ^{ - 1}}({t_0})X({t_0})
-$$
-<p>其中</p>
-$$
-\Phi(t)=\left[\begin{array}{cc}e^{\lambda_{1}\left(t-t_{0}\right)} & e^{\lambda_{2}\left(t-t_{0}\right)} \\\frac{\lambda_{1}-a_{11}}{a_{12}} e^{\lambda_{1}\left(t-t_{0}\right)} & \frac{\lambda_{2}-a_{11}}{a_{12}} e^{\lambda_{2}\left(t-t_{0}\right)}\end{array}\right]
-$$
-<p>若 $\lambda_1$ 是重根，利用公式</p>
-$$
-X(t) = \sum \limits_{j = 1}^k e^{\lambda_j t} \{ \sum\limits_{i = 0}^{n_j - 1} {(A - \lambda_j E)}^i \frac{t^i}{i!}\} {v_j}
-$$
-<p>计算，其中 ${v_j}$ 是系数矩阵的本征值 $\lambda_j$ 满足初始条件对应的本征矢量，${n_j}$ 为根 $\lambda_j$ 对应的重数。</p>
-<p>对非齐次常系数微分方程组，利用公式</p>
-$$
-X(t) = \Phi (t)\Phi^{-1}({t_0})X({t_0}) + \Phi (t)\int_{t_0}^t \Phi^{-1}(s)f(s) ds
-$$
-<p>进行计算。</p>
-<div class="details admonition tip open">
-        <div class="details-summary admonition-title">
-            <i class="icon fas fa-lightbulb fa-fw"></i>技巧<i class="details-icon fas fa-angle-right fa-fw"></i>
-        </div>
-        <div class="details-content">
-            <div class="admonition-content">事实上，当我们求解 Raman 跃迁问题时，遇到的方程组不一定是常系数的，所以一般需要先将其处理成常系数方程组再进行求解，常用的方法是同乘或同除以相关因子，以及对某对称项进行微分，等等。</div>
-        </div>
-    </div>
+            </div><div class="content" id="content"><p>原子干涉重力梯度测量追求更低的原子温度，因此一般对原子进行 Doppler 冷却后，在将原子上抛过程中还要对其进行偏振梯度冷却。与 Doppler冷却相比，偏振梯度冷却同样是利用对射激光束实现的，所不同的是它需要比 Doppler 冷却更大的失谐量，更弱的光强和较弱的磁场。其中大的失谐量跳变可以使用 FVC（Frequency Voltage Converter） 技术来实现。</p>
+<p>顾名思义，频率电压转换也即将输入频率转换为电压输出，换言之，此技术可以实现用电压来调控激光频率。相比于 AOM 移频，FVC 可以直接控制改变激光器的输出频率，且其频率跳变更有利于通过 AOM 来锁定激光频率。</p>
+<h2 id="基本原理" class="headerLink">
+    <a href="#%e5%9f%ba%e6%9c%ac%e5%8e%9f%e7%90%86" class="header-mark"></a>基本原理</h2><p><a href="https://www.bilibili.com/video/BV1eY4y1K7WG/?spm_id_from=333.337.search-card.all.click&amp;vd_source=78579f6265ef1ce9aeb5e999f37769c9" target="_blank" rel="noopener noreferrer">电压频率转换电路</a>又称压控振荡电路，是一种典型的信号转换电路，其电路形式非常多，但几乎均由积分运算电路、电压比较器和电子开关组成。以下是两种典型的原理框图。</p>
+<div align=center>
+    <img src=./FVC1.png width=90% />
+</div>
+<p>以电荷平衡式为例进行分析。设 $u_1&lt;0$，$\mid I \mid \gg \mid i_1 \mid$ , $u_o$ 的高电平为 $U_{OH}$，$u_o$ 的低电平为 $U_{OL}$；当 $u_o = U_{OL}$ 时，$S$ 闭合，当 $u_o = U_{OH}$ 时, S 断开。若初态 $u_o = U_{OL}$ ，$S$ 断开，积分器对输入电流 $i$ 积分，且 $i=u_1/R$ ，$u_{o1}$ 随时间逐上升; 当增大到一定数值时,$u_o$ 从 $U_{OL}$ 跃变为 $U_{OH}$ ，使 $S$ 闭合，积分器对恒流源电流 $I$ 与 $i_1$ 的差值积分，且 $I$ 与 $i_1$ 的差值近似为 $I$ ，$u_{o1}$ 随时间下降;因为 $\mid I \mid \gg \mid i_1 \mid$，所以 $u_{o1}$  下降速度远大于其上升速度;当 $u_{o1}$ 减小到一定数值时，$u_o$ 从 $U_{OH}$ 跃变为 $U_{OL}$ ，回到初态，电路重复上述过程，产生自激振荡，波形如下图所示。由于 $T_1 \gg T_2$, 可以认为振荡周期 $T \approx T_1$。而且，$u_1$ 数值愈大，$T$ 愈小，振荡频率 $f$ 愈高（详细的计算可以参考 <a href="https://www.bilibili.com/video/BV1WX4y1C7D3/?p=178&amp;spm_id_from=pageDriver" target="_blank" rel="noopener noreferrer">电荷平衡式详细分析</a>）,因此实现了电压-频率转换，或者说实现了压控振荡。由于电流源 $I$ 对电容 $C$ 在很短时间内放电(或称反向充电)的电荷量等于 $i_1$ 在较长时间内充电(或称正向充电)的电荷量，故称这类电路为电荷平衡式电路。</p>
+<div align=center>
+    <img src=./FVC2.png width=60% />
+</div>
+<h2 id="电路实现" class="headerLink">
+    <a href="#%e7%94%b5%e8%b7%af%e5%ae%9e%e7%8e%b0" class="header-mark"></a>电路实现</h2><p>拍频信号经过滤波之后通过比较器，将正弦信号变为方波信号。方波信号输入到数字芯片中分频降低其频率，以进入频率-电压转换芯片的工作范围。频率电压转换芯片输出的电压信号经过低通滤波后，与参考电压作差产生误差信号，输入 $\mathrm{PID}$ 反馈控制模块 $\mathrm{FAC 110}$ 积分之后，反馈到激光器的 $\mathrm{PZT}$ 调制端口，即可完成锁定。</p>
+<div align=center>
+    <img src=./FVC3.png width=90% />
+</div>
 </div>
 
         <div class="post-footer" id="post-footer">
     <div class="post-info">
         <div class="post-info-line">
             <div class="post-info-mod">
-                <span>更新于 2023-08-03&nbsp;<a class="git-hash" href="https://github.com/onetreey/onetreey.github.io/commit/3ba6ed50d073f746c8753b0d8ace3a91058c7468" target="_blank" title="commit by onetreey(251196507@qq.com) 3ba6ed50d073f746c8753b0d8ace3a91058c7468: 20230803" rel="noopener noreferrer">
-                                    <i class="fas fa-hashtag fa-fw"></i>3ba6ed5</a></span>
+                <span>更新于 2023-08-28</span>
             </div>
             <div class="post-info-license"></div>
         </div>
         <div class="post-info-line">
-            <div class="post-info-md"><span><a class="link-to-mardown" href=/ordinary_diff/index.md target="_blank" rel="noopener noreferrer">阅读原始文档</a>
+            <div class="post-info-md"><span><a class="link-to-mardown" href=/fvc/index.md target="_blank" rel="noopener noreferrer">阅读原始文档</a>
                     </span></div>
             <div class="post-info-share">
                 <span></span>
@@ -326,14 +206,13 @@ $$
     </div>
 
     <div class="post-info-more">
-        <section class="post-tags"><i class="fas fa-tags fa-fw"></i>&nbsp;<a href="/tags/%E5%B8%B8%E5%BE%AE%E5%88%86%E6%96%B9%E7%A8%8B%E7%BB%84/">常微分方程组</a></section>
+        <section class="post-tags"><i class="fas fa-tags fa-fw"></i>&nbsp;<a href="/tags/fvc/">FVC</a></section>
         <section>
             <span><a href="javascript:void(0);" onclick="window.history.back();">返回</a></span>&nbsp;|&nbsp;<span><a href="/">主页</a></span>
         </section>
     </div>
 
-    <div class="post-nav"><a href="/tri_ellipse/" class="prev" rel="prev" title="三角拟合与椭圆拟合"><i class="fas fa-angle-left fa-fw"></i>三角拟合与椭圆拟合</a>
-            <a href="/fvc/" class="next" rel="next" title="频率电压转换稳频（FVC）">频率电压转换稳频（FVC）<i class="fas fa-angle-right fa-fw"></i></a></div>
+    <div class="post-nav"><a href="/ordinary_diff/" class="prev" rel="prev" title="常微分方程组的解法"><i class="fas fa-angle-left fa-fw"></i>常微分方程组的解法</a></div>
 </div>
 </article></div>
         </main><footer class="footer">

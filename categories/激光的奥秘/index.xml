@@ -4,7 +4,14 @@
         <link>https://onetreey.github.io/categories/%E6%BF%80%E5%85%89%E7%9A%84%E5%A5%A5%E7%A7%98/</link>
         <description>激光的奥秘 - 分类 - onetreey 的六便士</description>
         <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>251196507@qq.com (yangshu)</managingEditor>
-            <webMaster>251196507@qq.com (yangshu)</webMaster><lastBuildDate>Sat, 29 Jul 2023 00:00:00 &#43;0000</lastBuildDate><atom:link href="https://onetreey.github.io/categories/%E6%BF%80%E5%85%89%E7%9A%84%E5%A5%A5%E7%A7%98/" rel="self" type="application/rss+xml" /><item>
+            <webMaster>251196507@qq.com (yangshu)</webMaster><lastBuildDate>Mon, 28 Aug 2023 00:00:00 &#43;0000</lastBuildDate><atom:link href="https://onetreey.github.io/categories/%E6%BF%80%E5%85%89%E7%9A%84%E5%A5%A5%E7%A7%98/" rel="self" type="application/rss+xml" /><item>
+    <title>频率电压转换稳频（FVC）</title>
+    <link>https://onetreey.github.io/fvc/</link>
+    <pubDate>Mon, 28 Aug 2023 00:00:00 &#43;0000</pubDate><author>
+        <name>yangshu</name>
+    </author><guid>https://onetreey.github.io/fvc/</guid>
+    <description><![CDATA[原子干涉重力梯度测量追求更低的原子温度，因此一般对原子进行 Doppler 冷却后，在将原子上抛过程中还要对其进行偏振梯度冷却。与 Doppler冷却相比，偏]]></description>
+</item><item>
     <title>调制转移稳频（MTS）</title>
     <link>https://onetreey.github.io/mts/</link>
     <pubDate>Sat, 29 Jul 2023 00:00:00 &#43;0000</pubDate><author>
