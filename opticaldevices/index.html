@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="robots" content="noodp" />
+    <title>基本光学器件 - onetreey 的六便士</title><meta name="Description" content="the tree is growing..."><meta property="og:title" content="基本光学器件" />
+<meta property="og:description" content="与通过欧姆定律等原理描述电路一样，光学中通过菲涅尔定律等原理描述并采用光路。 这里介绍一下与光相关的一些基本原理，重点是光受物质影响后的一些行" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://onetreey.github.io/opticaldevices/" /><meta property="og:image" content="https://onetreey.github.io/images/avatar.png"/><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2023-08-30T00:00:00+00:00" />
+<meta property="article:modified_time" content="2023-08-30T00:00:00+00:00" /><meta property="og:site_name" content="onetreey的六便士" />
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:image" content="https://onetreey.github.io/images/avatar.png"/>
+
+<meta name="twitter:title" content="基本光学器件"/>
+<meta name="twitter:description" content="与通过欧姆定律等原理描述电路一样，光学中通过菲涅尔定律等原理描述并采用光路。 这里介绍一下与光相关的一些基本原理，重点是光受物质影响后的一些行"/>
+<meta name="application-name" content="onetreey的六便士">
+<meta name="apple-mobile-web-app-title" content="onetreey的六便士">
+
+<meta name="theme-color" content="#f8f8f8"><meta name="msapplication-TileColor" content="#da532c"><link rel="icon" href="/images/avatar.png"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5"><link rel="manifest" href="/site.webmanifest"><link rel="canonical" href="https://onetreey.github.io/opticaldevices/" /><link rel="prev" href="https://onetreey.github.io/zotero_note/" /><link rel="next" href="https://onetreey.github.io/opll/" /><link rel="stylesheet" href="/lib/normalize/normalize.min.css"><link rel="stylesheet" href="/css/color.css"><link rel="stylesheet" href="/css/style.min.css"><link rel="preload" as="style" onload="this.onload=null;this.rel='stylesheet'" href="/lib/fontawesome-free/all.min.css">
+        <noscript><link rel="stylesheet" href="/lib/fontawesome-free/all.min.css"></noscript><link rel="preload" as="style" onload="this.onload=null;this.rel='stylesheet'" href="/lib/animate/animate.min.css">
+        <noscript><link rel="stylesheet" href="/lib/animate/animate.min.css"></noscript>
+    
+    
+    
+    <script type="application/ld+json">
+    {
+        "@context": "http://schema.org",
+        "@type": "BlogPosting",
+        "headline": "基本光学器件",
+        "inLanguage": "zh-CN",
+        "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": "https:\/\/onetreey.github.io\/opticaldevices\/"
+        },"genre": "posts","keywords": "基本光学知识","wordcount":  2181 ,
+        "url": "https:\/\/onetreey.github.io\/opticaldevices\/","datePublished": "2023-08-30T00:00:00+00:00","dateModified": "2023-08-30T00:00:00+00:00","publisher": {
+            "@type": "Organization",
+            "name": "","logo": {
+                    "@type": "ImageObject",
+                    "url": "https:\/\/onetreey.github.io\/images\/avatar.png",
+                    "width":  1280 ,
+                    "height":  720 
+                }},"author": {
+                "@type": "Person",
+                "name": "yangshu"
+            },"description": ""
+    }
+    </script><script src="//instant.page/5.1.1" defer type="module" integrity="sha384-MWfCL6g1OTGsbSwfuMHc8+8J2u71/LA8dzlIN3ycajckxuZZmF+DNjdm7O6H3PSq"></script>
+</head>
+
+<body header-desktop="fixed" header-mobile="auto"><script type="text/javascript">
+        function setTheme(theme) {document.body.setAttribute('theme', theme); document.documentElement.style.setProperty('color-scheme', theme === 'light' ? 'light' : 'dark');}
+        function saveTheme(theme) {window.localStorage && localStorage.setItem('theme', theme);}
+        function getMeta(metaName) {const metas = document.getElementsByTagName('meta'); for (let i = 0; i < metas.length; i++) if (metas[i].getAttribute('name') === metaName) return metas[i]; return '';}
+        if (window.localStorage && localStorage.getItem('theme')) {let theme = localStorage.getItem('theme');theme === 'light' || theme === 'dark' || theme === 'black' ? setTheme(theme) : (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches ? setTheme('dark') : setTheme('light')); } else { if ('auto' === 'light' || 'auto' === 'dark' || 'auto' === 'black') setTheme('auto'), saveTheme('auto'); else saveTheme('auto'), window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches ? setTheme('dark') : setTheme('light');}
+        let metaColors = {'light': '#f8f8f8','dark': '#252627','black': '#000000'}
+        getMeta('theme-color').content = metaColors[document.body.getAttribute('theme')];
+    </script>
+    <div id="back-to-top"></div>
+    <div id="mask"></div><div class="wrapper"><header class="desktop" id="header-desktop">
+    <div class="header-wrapper">
+        <div class="header-title">
+            <a href="/" title="onetreey 的六便士"><img
+        class="logo"
+        loading="lazy"
+        src="/images/avatar.png"
+        srcset="/images/avatar.png, /images/avatar.png 1.5x, /images/avatar.png 2x"
+        sizes="auto"
+        alt="/images/avatar.png"
+        title="/images/avatar.png"><span id="desktop-header-typeit" class="typeit"></span></a>
+        </div>
+        <div class="menu">
+            <div class="menu-inner"><a class="menu-item" href="/posts/"> 文章 </a><a class="menu-item" href="/categories/"> 分类 </a><a class="menu-item" href="/tags/"> 标签 </a><a class="menu-item" href="/about/"> 关于 </a><span class="menu-item delimiter"></span><span class="menu-item search" id="search-desktop">
+                        <input type="text" placeholder="搜索文章标题或内容..." id="search-input-desktop">
+                        <a href="#" class="search-button search-toggle" id="search-toggle-desktop" title="搜索">
+                            <i class="fas fa-search fa-fw"></i>
+                        </a>
+                        <a href="#" class="search-button search-clear" id="search-clear-desktop" title="清空">
+                            <i class="fas fa-times-circle fa-fw"></i>
+                        </a>
+                        <span class="search-button search-loading" id="search-loading-desktop">
+                            <i class="fas fa-spinner fa-fw fa-spin"></i>
+                        </span>
+                    </span><a href="#" class="menu-item theme-select" title="切换主题">
+                    <i class="fas fa-adjust fa-fw"></i>
+                    <select class="color-theme-select" id="theme-select-desktop" title="切换主题">
+                        <option value="light">浅色</option>
+                        <option value="dark">深色</option>
+                        <option value="black">黑色</option>
+                        <option value="auto">跟随系统</option>
+                    </select>
+                </a></div>
+        </div>
+    </div>
+</header><header class="mobile" id="header-mobile">
+    <div class="header-container">
+        <div class="header-wrapper">
+            <div class="header-title">
+                <a href="/" title="onetreey 的六便士"><img
+        class="logo"
+        loading="lazy"
+        src="/images/avatar.png"
+        srcset="/images/avatar.png, /images/avatar.png 1.5x, /images/avatar.png 2x"
+        sizes="auto"
+        alt="/images/avatar.png"
+        title="/images/avatar.png"><span id="mobile-header-typeit" class="typeit"></span></a>
+            </div>
+            <div class="menu-toggle" id="menu-toggle-mobile">
+                <span></span><span></span><span></span>
+            </div>
+        </div>
+        <div class="menu" id="menu-mobile"><div class="search-wrapper">
+                    <div class="search mobile" id="search-mobile">
+                        <input type="text" placeholder="搜索文章标题或内容..." id="search-input-mobile">
+                        <a href="#" class="search-button search-toggle" id="search-toggle-mobile" title="搜索">
+                            <i class="fas fa-search fa-fw"></i>
+                        </a>
+                        <a href="#" class="search-button search-clear" id="search-clear-mobile" title="清空">
+                            <i class="fas fa-times-circle fa-fw"></i>
+                        </a>
+                        <span class="search-button search-loading" id="search-loading-mobile">
+                            <i class="fas fa-spinner fa-fw fa-spin"></i>
+                        </span>
+                    </div>
+                    <a href="#" class="search-cancel" id="search-cancel-mobile">
+                        取消
+                    </a>
+                </div><a class="menu-item" href="/posts/" title="">文章</a><a class="menu-item" href="/categories/" title="">分类</a><a class="menu-item" href="/tags/" title="">标签</a><a class="menu-item" href="/about/" title="">关于</a><a href="#" class="menu-item theme-select" title="切换主题">
+                <i class="fas fa-adjust fa-fw"></i>
+                <select class="color-theme-select" id="theme-select-mobile" title="切换主题">
+                    <option value="light">浅色</option>
+                    <option value="dark">深色</option>
+                    <option value="black">黑色</option>
+                    <option value="auto">跟随系统</option>
+                </select>
+            </a></div>
+    </div>
+</header>
+<div class="search-dropdown desktop">
+    <div id="search-dropdown-desktop"></div>
+</div>
+<div class="search-dropdown mobile">
+    <div id="search-dropdown-mobile"></div>
+</div>
+<main class="main">
+            <div class="container"><div class="toc" id="toc-auto">
+        <h2 class="toc-title">目录</h2>
+        <div class="toc-content" id="toc-content-auto"><nav id="TableOfContents">
+  <ul>
+    <li><a href="#基本原理">基本原理</a>
+      <ul>
+        <li><a href="#减速">减速</a></li>
+        <li><a href="#折射">折射</a></li>
+        <li><a href="#色散">色散</a></li>
+        <li><a href="#全反射">全反射</a></li>
+      </ul>
+    </li>
+    <li><a href="#波动理论">波动理论</a>
+      <ul>
+        <li><a href="#电场矢量">电场矢量</a></li>
+        <li><a href="#干涉">干涉</a></li>
+      </ul>
+    </li>
+    <li><a href="#光学器件">光学器件</a>
+      <ul>
+        <li><a href="#偏振分光棱镜">偏振分光棱镜</a></li>
+        <li><a href="#四分之一波片fraclambda4-波片">四分之一波片（$\frac{\lambda}{4}$ 波片）</a></li>
+        <li><a href="#二分之一波片fraclambda2-波片">二分之一波片（$\frac{\lambda}{2}$ 波片）</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav></div>
+    </div><script>document.getElementsByTagName("main")[0].setAttribute("pageStyle", "normal")</script><script>document.getElementsByTagName("main")[0].setAttribute("autoTOC", "true")</script><article class="page single"><h1 class="single-title animate__animated animate__flipInX">基本光学器件</h1><div class="post-meta">
+            <div class="post-meta-line">
+                <span class="post-author"><i class="author fas fa-user-circle fa-fw"></i><a href="/" title="Author" rel=" author" class="author">yangshu</a>
+                </span>&nbsp;<span class="post-category">收录于 </span>&nbsp;<span class="post-category">类别 <a href="/categories/%E6%BF%80%E5%85%89%E7%9A%84%E5%A5%A5%E7%A7%98/"><i class="far fa-folder fa-fw"></i>激光的奥秘</a></span></div>
+            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw"></i>&nbsp;<time datetime="2023-08-30">2023-08-30</time>&nbsp;<i class="far fa-edit fa-fw"></i>&nbsp;<time datetime="2023-08-30">2023-08-30</time>&nbsp;<i class="fas fa-pencil-alt fa-fw"></i>&nbsp;约 2181 字&nbsp;
+                <i class="far fa-clock fa-fw"></i>&nbsp;预计阅读 5 分钟&nbsp;</div>
+        </div><div class="details toc" id="toc-static"  kept="">
+                <div class="details-summary toc-title">
+                    <span>目录</span>
+                    <span><i class="details-icon fas fa-angle-right"></i></span>
+                </div>
+                <div class="details-content toc-content" id="toc-content-static"><nav id="TableOfContents">
+  <ul>
+    <li><a href="#基本原理">基本原理</a>
+      <ul>
+        <li><a href="#减速">减速</a></li>
+        <li><a href="#折射">折射</a></li>
+        <li><a href="#色散">色散</a></li>
+        <li><a href="#全反射">全反射</a></li>
+      </ul>
+    </li>
+    <li><a href="#波动理论">波动理论</a>
+      <ul>
+        <li><a href="#电场矢量">电场矢量</a></li>
+        <li><a href="#干涉">干涉</a></li>
+      </ul>
+    </li>
+    <li><a href="#光学器件">光学器件</a>
+      <ul>
+        <li><a href="#偏振分光棱镜">偏振分光棱镜</a></li>
+        <li><a href="#四分之一波片fraclambda4-波片">四分之一波片（$\frac{\lambda}{4}$ 波片）</a></li>
+        <li><a href="#二分之一波片fraclambda2-波片">二分之一波片（$\frac{\lambda}{2}$ 波片）</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav></div>
+            </div><div class="content" id="content"><p>与通过欧姆定律等原理描述电路一样，光学中通过菲涅尔定律等原理描述并采用光路。
+这里介绍一下与光相关的一些基本原理，重点是光受物质影响后的一些行为，以此加深对概念的理解。</p>
+<h2 id="基本原理" class="headerLink">
+    <a href="#%e5%9f%ba%e6%9c%ac%e5%8e%9f%e7%90%86" class="header-mark"></a>基本原理</h2><h3 id="减速" class="headerLink">
+    <a href="#%e5%87%8f%e9%80%9f" class="header-mark"></a>减速</h3><p>光是能自我传播的电磁波，电场与磁场相互垂直。
+减速是光与非真空介质相互作用时的行为，有些重要的光学现象发生在材料界面上，很大程度上是由于光速变化。速度变化体现在折射率上：</p>
+<p>$$n=\frac{c}{v}$$</p>
+<p>折射率随波长变化,所以规定折射率时要指明波长。我们一般使用光谱吸收峰或夫琅和费谱线作为波长参考标准。D3线（588 nm 橙色）是最常用的参考。D3线折射率表示为 $n_d$ 。</p>
+<h3 id="折射" class="headerLink">
+    <a href="#%e6%8a%98%e5%b0%84" class="header-mark"></a>折射</h3><p>低折射率入射到高折射率，光线将向法线方向偏折,角度关系用菲涅尔定律（Snell&rsquo;s Law）描述：</p>
+<p>$$n_1\sin\theta_1 = n_2 \sin \theta_2$$</p>
+<p>若用 $i$ 表示入射光，$r$ 表示折射光，则公式变为：</p>
+<p>$$n_i\sin i = n_r \sin r$$</p>
+<p>因此，正是因为光的弯折，透镜才能屈光以完成需要做的事，事实上，汇聚或发散的程度就叫做屈光度。屈光度可以旋转对称，比如球面透镜；也可以是单轴，比如柱面透镜；很多因素决定哪些形状和尺寸最适合给定方案。</p>
+<h3 id="色散" class="headerLink">
+    <a href="#%e8%89%b2%e6%95%a3" class="header-mark"></a>色散</h3><p>因为折射率随波长变化，所以根据菲涅尔定律，不同的波长具有不同的折射角，所以导致白光可以分出不同的成分这种分光也叫做色散。反过来，利用这个原理也可以将不同波长的光组合成白光。</p>
+<h3 id="全反射" class="headerLink">
+    <a href="#%e5%85%a8%e5%8f%8d%e5%b0%84" class="header-mark"></a>全反射</h3><p>高折射率入射到低折射率，光线将向远离法线方向偏折,则存在一临界值，使得光线在这个角度下发生全反射（TIR，Total Internal Reflection），这种性质是光纤应用的基础。</p>
+<p>简单而言，反射定律即为入射角等于反射角：</p>
+<p>$$\theta_i = \theta_r$$</p>
+<p>反射是菲涅尔定律的一个特例。</p>
+<h2 id="波动理论" class="headerLink">
+    <a href="#%e6%b3%a2%e5%8a%a8%e7%90%86%e8%ae%ba" class="header-mark"></a>波动理论</h2><h3 id="电场矢量" class="headerLink">
+    <a href="#%e7%94%b5%e5%9c%ba%e7%9f%a2%e9%87%8f" class="header-mark"></a>电场矢量</h3><p>平常的各种光具有随机偏振态，说明电场矢量方向不断变化，就像不同波长的颜色混乱。如果正对光的传播方向看，电场矢量振荡呈现很大的随机性,但一般情况下，我们需要更稳定的光波振荡。为了更好地理解这种光学现象，可将光分解为垂直和水平分量，分别用 $E_x$ 和 $E_y$ 表示，这样更好理解发生在表面或其他情形的光学现象，也更好理解光的纯偏振态，以及如何表示垂直或水平偏振态，具体如偏振片后端的图示。</p>
+<p>继续讲反射，用复数表达通过均匀介质的线偏振光，通过数学推导和菲涅尔定律，算出平行和垂直偏振光的反射率，也称为 $s$ 偏振（$s$ 是德语垂直的首字母）和 $p$ 偏振,这个公式是菲涅尔推导的。他最早认识到光是一种横波，因此这个原理得名 菲涅尔反射。</p>
+<p>透过率可以类似地计算，但为了快速分析通常采用简化：</p>
+<p>$$A = 1-T-R$$</p>
+<p>$A$ 表示吸收率，在很多光学界面上可以忽略不计，因此 $1-R$ 就是透过率。</p>
+<p>反射只是实现偏振的方法之一，各种类型的偏振片利用二向色性，他们有优势也有局限性。局限是吸收不能承受高功率、灵敏度低、并且受应力和入射角影响。</p>
+<p>材料在不同传播轴上具有不同的折射率，这种不均匀行为通常出现在晶体中，叫做双折射。双折射可用于操纵偏振光。</p>
+<p>当晶轴或光轴垂直于传播方向时，我们就有了一类特殊的偏振器件、波片或延迟器。这些组件具有两个平行表面，在此产生有趣的现象。通过材料时，一个电场分量滞后于另一个电场分量，存在两种常见类型：四分之一波片与半波片。四分之一波片的延迟是90度相位差，两个分量相加最终变成圆偏振态；而半波片则是使输入线偏振绕光轴旋转，旋转到不同的输出线偏振，两种材料配合可制作受波长影响更小的波片，称为消色差或超消色差波片。</p>
+<h3 id="干涉" class="headerLink">
+    <a href="#%e5%b9%b2%e6%b6%89" class="header-mark"></a>干涉</h3><p>干涉的基本原理是波的叠加，如下图所示，当我们观察到两个波的叠加时，会发生三种现象，两个相对传播的波叠加时，有一种情况是相干相长，同相位振幅变成两倍；另一种是相干相消，不同相的两个波完全相消；最后一种部分相消干涉处于两种情况之间，干涉通过各种形式的光学器件呈现，在光学生产过程中还能用于测量，这里讲一下光学镀膜基础。</p>
+<p>通过在表面上镀一层膜，我们可以观察到两次背向反射，对于四分之一波片的光学厚度层，两反射波具有半波偏移，四分之一波进，四分之一波出，所以延迟半波导致相消干扰并降低背向反射，考虑电磁波的相位分量以及薄膜的菲涅尔反射，可以得到四分之一波规则：</p>
+<p>$$n=\frac{n^2_1}{n_{sub}} \to R = \frac{(n_0-n)^2}{(n_o+n)^2}$$</p>
+<p>简洁的四分之一波规则是设计光学薄膜的有力工具，可以帮助我们理解反射率R随光学厚度增加的振荡，让我们能制备简单的增透膜，</p>
+<h2 id="光学器件" class="headerLink">
+    <a href="#%e5%85%89%e5%ad%a6%e5%99%a8%e4%bb%b6" class="header-mark"></a>光学器件</h2><h3 id="偏振分光棱镜" class="headerLink">
+    <a href="#%e5%81%8f%e6%8c%af%e5%88%86%e5%85%89%e6%a3%b1%e9%95%9c" class="header-mark"></a>偏振分光棱镜</h3><p>偏振分光棱镜是通过在直角棱镜的斜面镀制多层膜结构，然后胶合成一个立方体结构，利用光线以布鲁斯特角入射时P偏振光透射率为1而S偏振光透射率小于1的性质，在光线以布鲁斯特角多次通过多层膜结构以后，达到使的P偏振分量完全透过，而绝大部分S偏振分量反射（至少90%以上）的一个光学元件。</p>
+<h3 id="四分之一波片fraclambda4-波片" class="headerLink">
+    <a href="#%e5%9b%9b%e5%88%86%e4%b9%8b%e4%b8%80%e6%b3%a2%e7%89%87fraclambda4-%e6%b3%a2%e7%89%87" class="header-mark"></a>四分之一波片（$\frac{\lambda}{4}$ 波片）</h3><p>也即晶体厚度恰能使 $o$ 光和 $e$ 光光程差为 $\lambda/4$ 的晶片：</p>
+<p>$$\delta = (n_o-n_e)d = \frac{\lambda}{4}$$</p>
+<p>$$\Delta \varphi = \frac{2\pi}{\lambda}(n_o-n_e)d = \frac{\pi}{2}$$</p>
+<p>旋转波片使入射光偏振方向与波片两轴夹角为45°，椭圆/圆偏振光经过四分之一波片后，变成了线偏振光。同理，如果入射光偏振方向与波片两轴夹角为45°，线偏振光经过四分之一波片后，变成了圆偏振光。</p>
+<p>具体过程为：</p>
+<blockquote>
+<p>正椭圆（圆）：相位差为 $\pm \pi/2$ 的两相互垂直谐振动的合成
+经过波片：产生 $\pi/2$ 相差
+透射之后：$\delta = 0$ 或 $\pi$</p>
+</blockquote>
+<h3 id="二分之一波片fraclambda2-波片" class="headerLink">
+    <a href="#%e4%ba%8c%e5%88%86%e4%b9%8b%e4%b8%80%e6%b3%a2%e7%89%87fraclambda2-%e6%b3%a2%e7%89%87" class="header-mark"></a>二分之一波片（$\frac{\lambda}{2}$ 波片）</h3><p>也即晶体厚度恰能使o光和e光光程差为λ/2的晶片：</p>
+<p>$$\delta = (n_o-n_e)d = \frac{\lambda}{2}$$</p>
+<p>$$\Delta \varphi = \frac{2\pi}{\lambda}(n_o-n_e)d = \pi$$</p>
+<p>线偏振光通过 $\lambda/2$ 波片后仍为线偏振光，但振动方向与原振动方向相比转过 $2\theta$。
+圆偏振光通过 $\lambda/2$ 波片后仍为圆偏振光，但转动方向与原来相反。</p>
+</div>
+
+        <div class="post-footer" id="post-footer">
+    <div class="post-info">
+        <div class="post-info-line">
+            <div class="post-info-mod">
+                <span>更新于 2023-08-30</span>
+            </div>
+            <div class="post-info-license"></div>
+        </div>
+        <div class="post-info-line">
+            <div class="post-info-md"><span><a class="link-to-mardown" href=/opticaldevices/index.md target="_blank" rel="noopener noreferrer">阅读原始文档</a>
+                    </span></div>
+            <div class="post-info-share">
+                <span></span>
+            </div>
+        </div>
+    </div>
+
+    <div class="post-info-more">
+        <section class="post-tags"><i class="fas fa-tags fa-fw"></i>&nbsp;<a href="/tags/%E5%9F%BA%E6%9C%AC%E5%85%89%E5%AD%A6%E7%9F%A5%E8%AF%86/">基本光学知识</a></section>
+        <section>
+            <span><a href="javascript:void(0);" onclick="window.history.back();">返回</a></span>&nbsp;|&nbsp;<span><a href="/">主页</a></span>
+        </section>
+    </div>
+
+    <div class="post-nav"><a href="/zotero_note/" class="prev" rel="prev" title="Zotero笔记同步"><i class="fas fa-angle-left fa-fw"></i>Zotero笔记同步</a>
+            <a href="/opll/" class="next" rel="next" title="光学锁相环（OPLL）">光学锁相环（OPLL）<i class="fas fa-angle-right fa-fw"></i></a></div>
+</div>
+</article></div>
+        </main><footer class="footer">
+        <div class="footer-container"><div class="footer-line">
+                    由 <a href="https://gohugo.io/" target="_blank" rel="noopener noreferrer" title="Hugo 0.110.0">Hugo</a> 强力驱动&nbsp;|&nbsp;主题 - <a href="https://github.com/HEIGE-PCloud/DoIt" target="_blank" rel="noopener noreferrer" title="DoIt 0.3.0"><i class="far fa-edit fa-fw"></i> DoIt</a>
+                </div><div class="footer-line"><i class="far fa-copyright fa-fw"></i><span itemprop="copyrightYear">2023 - 2024</span><span class="author" itemprop="copyrightHolder">&nbsp;<a href="/" target="_blank" rel="noopener noreferrer">yangshu</a></span>&nbsp;|&nbsp;<span class="license">本博客所有文章除特別声明外，均采用 <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/"> CC BY-SA 4.0 </a> 许可协议，转载请注明出处。</span></div>
+            <div class="footer-line"></div>
+            <div class="footer-line">
+            </div>
+        </div><script>
+                    if('serviceWorker' in navigator) {
+                        navigator.serviceWorker
+                            .register('/sw.min.js', { scope: '/' })
+                            .then(function(registration) {
+                            });
+                
+                        navigator.serviceWorker
+                            .ready
+                            .then(function(registration) {
+                            });
+                    }
+                </script></footer></div>
+
+    <div id="fixed-buttons"><a href="#back-to-top" id="back-to-top-button" class="fixed-button" title="回到顶部">
+            <i class="fas fa-arrow-up fa-fw"></i>
+        </a><a href="#" id="view-comments" class="fixed-button" title="查看评论">
+            <i class="fas fa-comment fa-fw"></i>
+        </a>
+    </div><div id="cookieconsent-container"></div><div class="assets"><link rel="stylesheet" href="/lib/katex/katex.min.css"><link rel="preload" as="style" onload="this.onload=null;this.rel='stylesheet'" href="/lib/katex/copy-tex.min.css">
+        <noscript><link rel="stylesheet" href="/lib/katex/copy-tex.min.css"></noscript><link rel="stylesheet" href="/lib/cookieconsent/cookieconsent.min.css"><script type="text/javascript">window.config={"code":{"copyTitle":"复制到剪贴板","maxShownLines":42},"comment":{},"cookieconsent":{"content":{"dismiss":"同意","link":"了解更多","message":"本网站使用 Cookies 来改善您的浏览体验."},"enable":true,"palette":{"button":{"background":"#f0f0f0"},"popup":{"background":"#1aa3ff"}},"theme":"edgeless"},"data":{"desktop-header-typeit":"onetreey的六便士","mobile-header-typeit":"onetreey的六便士"},"math":{"delimiters":[{"display":true,"left":"$$","right":"$$"},{"display":true,"left":"\\[","right":"\\]"},{"display":false,"left":"$","right":"$"},{"display":false,"left":"\\(","right":"\\)"}],"strict":false},"search":{"distance":100,"findAllMatches":false,"fuseIndexURL":"/index.json","highlightTag":"em","ignoreFieldNorm":false,"ignoreLocation":false,"isCaseSensitive":false,"location":0,"maxResultLength":10,"minMatchCharLength":2,"noResultsFound":"没有找到结果","snippetLength":50,"threshold":0.3,"type":"fuse","useExtendedSearch":false},"typeit":{"cursorChar":"|","cursorSpeed":1000,"data":{"desktop-header-typeit":["desktop-header-typeit"],"mobile-header-typeit":["mobile-header-typeit"]},"duration":-1,"speed":100}};</script><script type="text/javascript" src="/lib/clipboard/clipboard.min.js"></script><script type="text/javascript" src="/lib/typeit/typeit.min.js"></script><script type="text/javascript" src="/lib/katex/katex.min.js" defer></script><script type="text/javascript" src="/lib/katex/auto-render.min.js" defer></script><script type="text/javascript" src="/lib/katex/copy-tex.min.js" defer></script><script type="text/javascript" src="/lib/katex/mhchem.min.js" defer></script><script type="text/javascript" src="/js/katex.min.js" defer></script><script type="text/javascript" src="/lib/cookieconsent/cookieconsent.min.js" defer></script><script type="text/javascript" src="/js/cookieconsent.min.js" defer></script><script type="text/javascript" src="/js/theme.min.js" defer></script></div>
+</body>
+
+</html>

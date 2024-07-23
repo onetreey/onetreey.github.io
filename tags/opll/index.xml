@@ -1,0 +1,15 @@
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+        <title>OPLL - 标签 - onetreey 的六便士</title>
+        <link>https://onetreey.github.io/tags/opll/</link>
+        <description>OPLL - 标签 - onetreey 的六便士</description>
+        <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>251196507@qq.com (yangshu)</managingEditor>
+            <webMaster>251196507@qq.com (yangshu)</webMaster><lastBuildDate>Wed, 30 Aug 2023 00:00:00 &#43;0000</lastBuildDate><atom:link href="https://onetreey.github.io/tags/opll/" rel="self" type="application/rss+xml" /><item>
+    <title>光学锁相环（OPLL）</title>
+    <link>https://onetreey.github.io/opll/</link>
+    <pubDate>Wed, 30 Aug 2023 00:00:00 &#43;0000</pubDate><author>
+        <name>yangshu</name>
+    </author><guid>https://onetreey.github.io/opll/</guid>
+    <description><![CDATA[基于受激 Raman 跃迁的原子干涉仪的输出相位与两束 Raman 光的相位差有关，因此需要两束 Raman 光相位差固定。光学锁相环是被广泛应用的成熟的技术 基本原理激光器经过]]></description>
+</item></channel>
+</rss>

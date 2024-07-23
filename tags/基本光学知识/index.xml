@@ -1,0 +1,15 @@
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+        <title>基本光学知识 - 标签 - onetreey 的六便士</title>
+        <link>https://onetreey.github.io/tags/%E5%9F%BA%E6%9C%AC%E5%85%89%E5%AD%A6%E7%9F%A5%E8%AF%86/</link>
+        <description>基本光学知识 - 标签 - onetreey 的六便士</description>
+        <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>251196507@qq.com (yangshu)</managingEditor>
+            <webMaster>251196507@qq.com (yangshu)</webMaster><lastBuildDate>Wed, 30 Aug 2023 00:00:00 &#43;0000</lastBuildDate><atom:link href="https://onetreey.github.io/tags/%E5%9F%BA%E6%9C%AC%E5%85%89%E5%AD%A6%E7%9F%A5%E8%AF%86/" rel="self" type="application/rss+xml" /><item>
+    <title>基本光学器件</title>
+    <link>https://onetreey.github.io/opticaldevices/</link>
+    <pubDate>Wed, 30 Aug 2023 00:00:00 &#43;0000</pubDate><author>
+        <name>yangshu</name>
+    </author><guid>https://onetreey.github.io/opticaldevices/</guid>
+    <description><![CDATA[与通过欧姆定律等原理描述电路一样，光学中通过菲涅尔定律等原理描述并采用光路。 这里介绍一下与光相关的一些基本原理，重点是光受物质影响后的一些行]]></description>
+</item></channel>
+</rss>

@@ -1,0 +1,15 @@
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+        <title>Zotero - 标签 - onetreey 的六便士</title>
+        <link>https://onetreey.github.io/tags/zotero/</link>
+        <description>Zotero - 标签 - onetreey 的六便士</description>
+        <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>251196507@qq.com (yangshu)</managingEditor>
+            <webMaster>251196507@qq.com (yangshu)</webMaster><lastBuildDate>Mon, 28 Aug 2023 00:00:00 &#43;0000</lastBuildDate><atom:link href="https://onetreey.github.io/tags/zotero/" rel="self" type="application/rss+xml" /><item>
+    <title>Zotero笔记同步</title>
+    <link>https://onetreey.github.io/zotero_note/</link>
+    <pubDate>Mon, 28 Aug 2023 00:00:00 &#43;0000</pubDate><author>
+        <name>yangshu</name>
+    </author><guid>https://onetreey.github.io/zotero_note/</guid>
+    <description><![CDATA[Zotero笔记配置zotero作为一个开源的文献管理工具，当我们对其进行基本配置之后，就可以开始用它读文献啦。这个&quot;基本配置&q]]></description>
+</item></channel>
+</rss>

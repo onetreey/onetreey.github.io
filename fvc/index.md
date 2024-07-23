@@ -7,16 +7,16 @@
 
 ## 基本原理
 
-[电压频率转换电路](https://www.bilibili.com/video/BV1eY4y1K7WG/?spm_id_from=333.337.search-card.all.click&vd_source=78579f6265ef1ce9aeb5e999f37769c9)又称压控振荡电路，是一种典型的信号转换电路，其电路形式非常多，但几乎均由积分运算电路、电压比较器和电子开关组成。以下是两种典型的原理框图。
+[电压频率转换电路](https://www.bilibili.com/video/BV1eY4y1K7WG/?spm_id_from=333.337.search-card.all.click&vd_source=78579f6265ef1ce9aeb5e999f37769c9)又称压控振荡电路，是一种典型的信号转换电路，其电路形式非常多，但几乎均由积分运算电路、电压比较器和电子开关组成。以下是两种典型的原理框图:
 
 <div align=center>
-    <img src=./FVC1.png width=90% />
+    <img src=./FVC1.png width=80% />
 </div>
 
 以电荷平衡式为例进行分析。设 $u_1<0$，$\mid I \mid \gg \mid i_1 \mid$ , $u_o$ 的高电平为 $U_{OH}$，$u_o$ 的低电平为 $U_{OL}$；当 $u_o = U_{OL}$ 时，$S$ 闭合，当 $u_o = U_{OH}$ 时, S 断开。若初态 $u_o = U_{OL}$ ，$S$ 断开，积分器对输入电流 $i$ 积分，且 $i=u_1/R$ ，$u_{o1}$ 随时间逐上升; 当增大到一定数值时,$u_o$ 从 $U_{OL}$ 跃变为 $U_{OH}$ ，使 $S$ 闭合，积分器对恒流源电流 $I$ 与 $i_1$ 的差值积分，且 $I$ 与 $i_1$ 的差值近似为 $I$ ，$u_{o1}$ 随时间下降;因为 $\mid I \mid \gg \mid i_1 \mid$，所以 $u_{o1}$  下降速度远大于其上升速度;当 $u_{o1}$ 减小到一定数值时，$u_o$ 从 $U_{OH}$ 跃变为 $U_{OL}$ ，回到初态，电路重复上述过程，产生自激振荡，波形如下图所示。由于 $T_1 \gg T_2$, 可以认为振荡周期 $T \approx T_1$。而且，$u_1$ 数值愈大，$T$ 愈小，振荡频率 $f$ 愈高（详细的计算可以参考 [电荷平衡式详细分析](https://www.bilibili.com/video/BV1WX4y1C7D3/?p=178&spm_id_from=pageDriver)）,因此实现了电压-频率转换，或者说实现了压控振荡。由于电流源 $I$ 对电容 $C$ 在很短时间内放电(或称反向充电)的电荷量等于 $i_1$ 在较长时间内充电(或称正向充电)的电荷量，故称这类电路为电荷平衡式电路。
 
 <div align=center>
-    <img src=./FVC2.png width=60% />
+    <img src=./FVC2.png width=50% />
 </div>
 
 ## 电路实现
@@ -24,6 +24,6 @@
 拍频信号经过滤波之后通过比较器，将正弦信号变为方波信号。方波信号输入到数字芯片中分频降低其频率，以进入频率-电压转换芯片的工作范围。频率电压转换芯片输出的电压信号经过低通滤波后，与参考电压作差产生误差信号，输入 $\mathrm{PID}$ 反馈控制模块 $\mathrm{FAC 110}$ 积分之后，反馈到激光器的 $\mathrm{PZT}$ 调制端口，即可完成锁定。
 
 <div align=center>
-    <img src=./FVC3.png width=90% />
+    <img src=./FVC3.png width=80% />
 </div>
 

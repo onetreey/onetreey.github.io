@@ -4,12 +4,12 @@
         <link>https://onetreey.github.io/categories/%E5%A5%BD%E7%8E%A9%E7%9A%84%E5%B7%A5%E5%85%B7/</link>
         <description>好玩的工具 - 分类 - onetreey 的六便士</description>
         <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>251196507@qq.com (yangshu)</managingEditor>
-            <webMaster>251196507@qq.com (yangshu)</webMaster><lastBuildDate>Wed, 24 May 2023 20:51:06 &#43;0800</lastBuildDate><atom:link href="https://onetreey.github.io/categories/%E5%A5%BD%E7%8E%A9%E7%9A%84%E5%B7%A5%E5%85%B7/" rel="self" type="application/rss+xml" /><item>
-    <title>hugo学习笔记</title>
-    <link>https://onetreey.github.io/note/</link>
-    <pubDate>Wed, 24 May 2023 20:51:06 &#43;0800</pubDate><author>
+            <webMaster>251196507@qq.com (yangshu)</webMaster><lastBuildDate>Mon, 28 Aug 2023 00:00:00 &#43;0000</lastBuildDate><atom:link href="https://onetreey.github.io/categories/%E5%A5%BD%E7%8E%A9%E7%9A%84%E5%B7%A5%E5%85%B7/" rel="self" type="application/rss+xml" /><item>
+    <title>Zotero笔记同步</title>
+    <link>https://onetreey.github.io/zotero_note/</link>
+    <pubDate>Mon, 28 Aug 2023 00:00:00 &#43;0000</pubDate><author>
         <name>yangshu</name>
-    </author><guid>https://onetreey.github.io/note/</guid>
-    <description><![CDATA[创建新文档hugo new posts/blogtest/note.md]]></description>
+    </author><guid>https://onetreey.github.io/zotero_note/</guid>
+    <description><![CDATA[Zotero笔记配置zotero作为一个开源的文献管理工具，当我们对其进行基本配置之后，就可以开始用它读文献啦。这个&quot;基本配置&q]]></description>
 </item></channel>
 </rss>

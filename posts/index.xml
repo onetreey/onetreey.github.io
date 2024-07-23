@@ -4,7 +4,35 @@
         <link>https://onetreey.github.io/posts/</link>
         <description>所有文章 | onetreey 的六便士</description>
         <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>251196507@qq.com (yangshu)</managingEditor>
-            <webMaster>251196507@qq.com (yangshu)</webMaster><lastBuildDate>Mon, 28 Aug 2023 00:00:00 &#43;0000</lastBuildDate><atom:link href="https://onetreey.github.io/posts/" rel="self" type="application/rss+xml" /><item>
+            <webMaster>251196507@qq.com (yangshu)</webMaster><lastBuildDate>Tue, 23 Jul 2024 00:00:00 &#43;0000</lastBuildDate><atom:link href="https://onetreey.github.io/posts/" rel="self" type="application/rss+xml" /><item>
+    <title>北岛的诗</title>
+    <link>https://onetreey.github.io/beidao/</link>
+    <pubDate>Tue, 23 Jul 2024 00:00:00 &#43;0000</pubDate><author>
+        <name>yangshu</name>
+    </author><guid>https://onetreey.github.io/beidao/</guid>
+    <description><![CDATA[走吧走吧， 落叶吹进深谷， 歌声却没有归宿。 走吧， 冰上的月光， 已从河面上溢出。 走吧， 眼睛望着同一片天空， 心敲击着暮色的鼓。 走吧， 我们没有失去记忆]]></description>
+</item><item>
+    <title>光学锁相环（OPLL）</title>
+    <link>https://onetreey.github.io/opll/</link>
+    <pubDate>Wed, 30 Aug 2023 00:00:00 &#43;0000</pubDate><author>
+        <name>yangshu</name>
+    </author><guid>https://onetreey.github.io/opll/</guid>
+    <description><![CDATA[基于受激 Raman 跃迁的原子干涉仪的输出相位与两束 Raman 光的相位差有关，因此需要两束 Raman 光相位差固定。光学锁相环是被广泛应用的成熟的技术 基本原理激光器经过]]></description>
+</item><item>
+    <title>基本光学器件</title>
+    <link>https://onetreey.github.io/opticaldevices/</link>
+    <pubDate>Wed, 30 Aug 2023 00:00:00 &#43;0000</pubDate><author>
+        <name>yangshu</name>
+    </author><guid>https://onetreey.github.io/opticaldevices/</guid>
+    <description><![CDATA[与通过欧姆定律等原理描述电路一样，光学中通过菲涅尔定律等原理描述并采用光路。 这里介绍一下与光相关的一些基本原理，重点是光受物质影响后的一些行]]></description>
+</item><item>
+    <title>Zotero笔记同步</title>
+    <link>https://onetreey.github.io/zotero_note/</link>
+    <pubDate>Mon, 28 Aug 2023 00:00:00 &#43;0000</pubDate><author>
+        <name>yangshu</name>
+    </author><guid>https://onetreey.github.io/zotero_note/</guid>
+    <description><![CDATA[Zotero笔记配置zotero作为一个开源的文献管理工具，当我们对其进行基本配置之后，就可以开始用它读文献啦。这个&quot;基本配置&q]]></description>
+</item><item>
     <title>频率电压转换稳频（FVC）</title>
     <link>https://onetreey.github.io/fvc/</link>
     <pubDate>Mon, 28 Aug 2023 00:00:00 &#43;0000</pubDate><author>
@@ -46,33 +74,5 @@
         <name>yangshu</name>
     </author><guid>https://onetreey.github.io/haizi/</guid>
     <description><![CDATA[黑夜的献诗 ——献给黑夜的女儿黑夜从大地上升起 遮住了光明的天空 丰收后荒凉的大地 黑夜从你内部上升 你从远方来，我到远方去 遥远的路程经过这里 天空一无]]></description>
-</item><item>
-    <title>纪弦的诗</title>
-    <link>https://onetreey.github.io/jixian/</link>
-    <pubDate>Sat, 29 Jul 2023 00:00:00 &#43;0000</pubDate><author>
-        <name>yangshu</name>
-    </author><guid>https://onetreey.github.io/jixian/</guid>
-    <description><![CDATA[你的名字用了世界上最轻最轻的声音， 轻轻地唤你的名字每夜每夜。 写你的名字。 画你的名字。 而梦见的是你的发光的名字： 如日，如星，你的名字。 如灯，如]]></description>
-</item><item>
-    <title>李白的诗</title>
-    <link>https://onetreey.github.io/libai/</link>
-    <pubDate>Sat, 29 Jul 2023 00:00:00 &#43;0000</pubDate><author>
-        <name>yangshu</name>
-    </author><guid>https://onetreey.github.io/libai/</guid>
-    <description><![CDATA[答王十二寒夜独酌有感昨夜吴中雪，子猷佳兴发。 万里浮云卷碧山，青天中道流孤月。 孤月沧浪河汉清，北斗错落长庚明。 怀余对酒夜霜白，玉床金井冰峥嵘。]]></description>
-</item><item>
-    <title>辛弃疾的诗</title>
-    <link>https://onetreey.github.io/xinqiji/</link>
-    <pubDate>Sat, 29 Jul 2023 00:00:00 &#43;0000</pubDate><author>
-        <name>yangshu</name>
-    </author><guid>https://onetreey.github.io/xinqiji/</guid>
-    <description><![CDATA[贺新郎·甚矣吾衰矣邑中园亭，仆皆为赋此词。一日，独坐停云，水声山色，竞来相娱。意溪山欲援例者，遂作数语，庶几仿佛渊明思亲友之意云。 甚矣吾衰矣]]></description>
-</item><item>
-    <title>周梦蝶的诗</title>
-    <link>https://onetreey.github.io/zhoumengdie/</link>
-    <pubDate>Sat, 29 Jul 2023 00:00:00 &#43;0000</pubDate><author>
-        <name>yangshu</name>
-    </author><guid>https://onetreey.github.io/zhoumengdie/</guid>
-    <description><![CDATA[我选择·二十一行我选择紫色， 我选择早睡早起早出早归。 我选择冷粥，破砚，晴窗， 忙人之所闲而闲人之所忙。 我选择非必不得已， 一切事，无分巨细，总自]]></description>
 </item></channel>
 </rss>

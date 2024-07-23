@@ -114,7 +114,7 @@ $${{< /math >}}
 \left[\begin{array}{l}x_{1} \\x_{2}\end{array}\right]=\left[\begin{array}{cc}e^{\lambda_{1}\left(t-t_{0}\right)} & e^{\lambda_{2}\left(t-t_{0}\right)} \\\frac{\lambda_{1}-a_{11}}{a_{12}} e^{\lambda_{1}\left(t-t_{0}\right)} & \frac{\lambda_{2}-a_{11}}{a_{12}} e^{\lambda_{2}\left(t-t_{0}\right)}\end{array}\right]\left[\begin{array}{l}c_{1}\left(t_{0}\right) \\c_{2}\left(t_{0}\right)\end{array}\right]
 $${{< /math >}}
 
- 将上式简写为：
+将上式简写为：
 
 {{< math >}}$$
 X(t) = \Phi (t)C({t_0})

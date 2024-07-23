@@ -4,7 +4,21 @@
         <link>https://onetreey.github.io/categories/%E6%BF%80%E5%85%89%E7%9A%84%E5%A5%A5%E7%A7%98/</link>
         <description>激光的奥秘 - 分类 - onetreey 的六便士</description>
         <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>251196507@qq.com (yangshu)</managingEditor>
-            <webMaster>251196507@qq.com (yangshu)</webMaster><lastBuildDate>Mon, 28 Aug 2023 00:00:00 &#43;0000</lastBuildDate><atom:link href="https://onetreey.github.io/categories/%E6%BF%80%E5%85%89%E7%9A%84%E5%A5%A5%E7%A7%98/" rel="self" type="application/rss+xml" /><item>
+            <webMaster>251196507@qq.com (yangshu)</webMaster><lastBuildDate>Wed, 30 Aug 2023 00:00:00 &#43;0000</lastBuildDate><atom:link href="https://onetreey.github.io/categories/%E6%BF%80%E5%85%89%E7%9A%84%E5%A5%A5%E7%A7%98/" rel="self" type="application/rss+xml" /><item>
+    <title>光学锁相环（OPLL）</title>
+    <link>https://onetreey.github.io/opll/</link>
+    <pubDate>Wed, 30 Aug 2023 00:00:00 &#43;0000</pubDate><author>
+        <name>yangshu</name>
+    </author><guid>https://onetreey.github.io/opll/</guid>
+    <description><![CDATA[基于受激 Raman 跃迁的原子干涉仪的输出相位与两束 Raman 光的相位差有关，因此需要两束 Raman 光相位差固定。光学锁相环是被广泛应用的成熟的技术 基本原理激光器经过]]></description>
+</item><item>
+    <title>基本光学器件</title>
+    <link>https://onetreey.github.io/opticaldevices/</link>
+    <pubDate>Wed, 30 Aug 2023 00:00:00 &#43;0000</pubDate><author>
+        <name>yangshu</name>
+    </author><guid>https://onetreey.github.io/opticaldevices/</guid>
+    <description><![CDATA[与通过欧姆定律等原理描述电路一样，光学中通过菲涅尔定律等原理描述并采用光路。 这里介绍一下与光相关的一些基本原理，重点是光受物质影响后的一些行]]></description>
+</item><item>
     <title>频率电压转换稳频（FVC）</title>
     <link>https://onetreey.github.io/fvc/</link>
     <pubDate>Mon, 28 Aug 2023 00:00:00 &#43;0000</pubDate><author>
