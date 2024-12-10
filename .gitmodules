@@ -1,7 +1,0 @@
-[submodule "themes/DoIt"]
-    path = themes/DoIt
-    url = <https://onetreey.github.io/>
-
-[submodule "public"]
-    path = public
-    url = <https://onetreey.github.io/>
