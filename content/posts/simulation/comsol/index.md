@@ -1,5 +1,5 @@
 ---
-title: "机械波在固体中的传播问题(comsol)"
+title: "机械波在固体中的传播(comsol)"
 date: 2024-12-09T15:01:06+08:00
 tags: ["comsol"]
 categories: ["做一点仿真"]
